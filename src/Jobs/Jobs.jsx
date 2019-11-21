@@ -1,14 +1,13 @@
 import React, { Component } from 'react'
-import "./header.css"
 
-class header extends Component {
+export class Jobs extends Component {
     render() {
         return (
-            <div className="bg-image">
+            <div>
                 
             </div>
         )
     }
 }
 
-export default header
+export default Jobs
