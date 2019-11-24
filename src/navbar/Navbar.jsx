@@ -13,7 +13,7 @@ import {
   NavLink,
 } from 'reactstrap';
 
-const Example = (props) => {
+const NavBar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
@@ -26,13 +26,13 @@ const Example = (props) => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
             <NavItem>
-              <NavLink href="/components/">Home</NavLink>
+              <NavLink href='/'><span className="navItems">Home</span></NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">Jobs</NavLink>
+              <NavLink href='/jobs'><span className="navItems">Jobs</span></NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">About</NavLink>
+              <NavLink href='/about'><span className="navItems">About</span></NavLink>
             </NavItem>
           </Nav>
         </Collapse>
@@ -41,4 +41,4 @@ const Example = (props) => {
   );
 }
 
-export default Example;
+export default NavBar;
