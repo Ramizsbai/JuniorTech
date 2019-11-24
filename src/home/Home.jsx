@@ -4,7 +4,7 @@ import Header from './header/headerComponents/Header';
 export class Home extends Component {
     render() {
         return (
-            <div>
+            <div className="bg-image">
                 <Header />
             </div>
         )

@@ -5,8 +5,8 @@ import './inputGroup.css';
 export class InputGroup extends Component {
     render() {
         return (
-            <div>
-              <Form inline className="d-flex justify-content-center mt-5">
+            <div className="input-group">
+              <Form inline className="d-flex justify-content-center">
                 <FormGroup className="mb-2 mr-sm-2 mb-sm-0 ">
                    <Input type="search" name="search" id="exampleSearch" placeholder="Keywords" className="inputGroup" />
                 </FormGroup>

@@ -6,3 +6,8 @@
  background-position: center;
  background-size: cover;
 }
+.header {
+    position: absolute;
+    top: 20vh;
+    width: 100%;
+}

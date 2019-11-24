@@ -11,7 +11,6 @@ function App() {
         <BrowserRouter>
 
     <div className="App">
-      <div className="bg-image">
          <Navbar />
          <Switch>
            <Route path='/' component={Home} exact/> 
@@ -19,7 +18,6 @@ function App() {
            <Route path='/about' component={About}/> 
 
          </Switch>
-      </div>
     </div>
     </BrowserRouter>   
 

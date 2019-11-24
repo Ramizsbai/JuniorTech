@@ -6,7 +6,7 @@ import Title from './title/Title';
 class Header extends Component {
     render() {
         return (
-            <div>
+            <div className="header">
                <Title />
                <InputGroup />
             </div>            
