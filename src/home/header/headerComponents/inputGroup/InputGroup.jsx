@@ -7,13 +7,13 @@ export class InputGroup extends Component {
         return (
             <div>
               <Form inline className="d-flex justify-content-center mt-5">
-                <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
+                <FormGroup className="mb-2 mr-sm-2 mb-sm-0 ">
                    <Input type="search" name="search" id="exampleSearch" placeholder="Keywords" className="inputGroup" />
                 </FormGroup>
-                <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
+                <FormGroup className="mb-2 mr-sm-2 mb-sm-0 ml-3">
                    <Input type="search" name="search" id="exampleSearch2" placeholder="City" className="inputGroup" />
                 </FormGroup>
-                <Button>Submit</Button>
+                <Button className="searchButton ml-3">Submit</Button>
                </Form>
             </div>
         )
