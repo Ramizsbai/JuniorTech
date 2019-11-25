@@ -13,16 +13,16 @@ import About from './about/About';
 
 function App() {
   return (
-    <BrowserRouter>
 
-      <div className="App">
-        <Navbar />
-        <Switch>
-          <Route path='/' component={Home} exact />
-          <Route path='/jobs' component={Jobs} />
-          <Route path='/about' component={About} />
+        <BrowserRouter>
 
-        </Switch>
+    <div className="App">
+         <Navbar />
+         <Switch>
+           <Route path='/' component={Home} exact/> 
+           <Route path='/jobs' component={Jobs}/> 
+           <Route path='/about' component={About}/> 
+         </Switch>
 
       </div>
     </BrowserRouter>

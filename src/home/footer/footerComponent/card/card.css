@@ -1,0 +1,17 @@
+.footer-card{
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+
+
+.footer-body{
+    text-align: start;
+
+
+}
+.footer-button{
+    width: 17vw;
+    height: 50px;
+}
