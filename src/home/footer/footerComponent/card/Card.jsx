@@ -1,20 +1,16 @@
 import React from 'react';
-import { Card, Button, CardBody, } from 'reactstrap';
+import { Button } from 'reactstrap';
 import './card.css';
 
 const Example = (props) => {
     return (
-        <div>
-            <Card className="mx-5 ">
-                <div className="footer-card mx-5">
-                    <CardBody className="footer-body">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt magni, voluptas debitis
-                        similique porro a molestias consequuntur earum odio officiis natus, amet hic, iste sed
-                        dignissimos esse fuga! Minus, alias.
-             </CardBody>
-                    <Button color="success" className="footer-button my-auto">Contact Us</Button>
-                </div>
-            </Card>
+        <div className="footer-card-home mx-auto">
+
+            <div className="footer-card mt-5">
+                <p className="my-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <Button className="searchButton ml-3 my-auto" color="success">Contact Us</Button>
+            </div>
+
 
 
 
