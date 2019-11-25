@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": ".",
+  "homepage": "https://ramizsbai.github.io/JuniorTech",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "react": "^16.12.0",
