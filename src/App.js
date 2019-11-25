@@ -2,13 +2,15 @@ import React from 'react';
 import './app.css';
 import Home from './home/Home';
 import Navbar from './navbar/Navbar';
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Jobs from './Jobs/Jobs';
 import About from './about/About';
 
 
+
 function App() {
   return (
+
         <BrowserRouter>
 
     <div className="App">
@@ -19,8 +21,8 @@ function App() {
            <Route path='/about' component={About}/> 
          </Switch>
 
-    </div>
-    </BrowserRouter>   
+      </div>
+    </BrowserRouter>
 
   );
 }
