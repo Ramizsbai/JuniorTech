@@ -1,4 +1,4 @@
-import React, {Component} from "react"
+import React from "react"
 import './Bodytwo.css'
 import Photo from './work-photo.svg'
 import {Button, Container, Row } from 'reactstrap'
