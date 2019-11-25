@@ -1,0 +1,15 @@
+.mainHeader2 {
+ width: 100%;
+ height: 450px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
+.mainHeader{
+    width: 100%;
+    height: 700px;
+ background-image: url(./todaayyy.png);
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: cover;
+}
