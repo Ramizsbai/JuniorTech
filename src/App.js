@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './home/header/headerComponents/Header';
 import './app.css';
-import Footer from './home/footer/Footer'
+
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
 
       <Header />
 
-      <Footer />
+ggit
 
     </div>
   );
