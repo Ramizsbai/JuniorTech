@@ -7,6 +7,21 @@ export class Jobs extends Component {
         return (
             <div className="jobs-container">
                 <JobsSubComponent />
+                <JobsSubComponent />
+                <JobsSubComponent />
+                <JobsSubComponent />
+                <JobsSubComponent />
+                <JobsSubComponent />
+                <JobsSubComponent />
+                <JobsSubComponent />
+                <JobsSubComponent />
+                <JobsSubComponent />
+                <JobsSubComponent />
+                <JobsSubComponent />
+                <JobsSubComponent />
+                <JobsSubComponent />
+                <JobsSubComponent />
+
             </div>
         )
     }
