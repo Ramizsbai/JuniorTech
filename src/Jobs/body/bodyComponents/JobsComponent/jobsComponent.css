@@ -1,0 +1,6 @@
+.jobs-container{
+width: 40%;
+height: 720px;
+border: 1px solid black;
+overflow-y: scroll ;
+}
