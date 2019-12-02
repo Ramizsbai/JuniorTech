@@ -12,11 +12,14 @@
     justify-content: space-around;
     
 }
-.content{
+.header-container{
   border: 1px solid black;
   margin-top: 10%;
   position: relative;
-  left: 40px;
+  left: 30px;
   background-color: white;
   overflow: hidden;
+  width: 200px;
+  height: 50px;
+  box-sizing: border-box;
 }
