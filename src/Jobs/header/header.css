@@ -11,27 +11,21 @@
   display: flex;
   justify-content: center;
   position: relative;
-  top: 52px;
+  top: 72px;
   border-width: 1px;
   border-radius: 15px;
-  height: 80px;
-  width: 38vw;
+  height: 60px;
+  width: 58vw;
   background-color: white; 
 }
 .header-input-jobs{
   border: none;
-
 }
-.green-line{
+.black-line{
   width: 2px;
   height: 100%;
   background-color: black;
 }
 .header-input-jobs:focus{
   outline: none;
-}
-.button-jobs{
-  position: relative;
-  border-width: 1px;
-  border-radius: 15px;
 }
