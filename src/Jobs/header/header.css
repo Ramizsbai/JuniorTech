@@ -11,8 +11,27 @@
   display: flex;
   justify-content: center;
   position: relative;
-  border-style: solid;
+  top: 52px;
   border-width: 1px;
-  border-radius: 8px;
-  padding-top: 75px;
+  border-radius: 15px;
+  height: 80px;
+  width: 38vw;
+  background-color: white; 
+}
+.header-input-jobs{
+  border: none;
+
+}
+.green-line{
+  width: 2px;
+  height: 100%;
+  background-color: black;
+}
+.header-input-jobs:focus{
+  outline: none;
+}
+.button-jobs{
+  position: relative;
+  border-width: 1px;
+  border-radius: 15px;
 }
