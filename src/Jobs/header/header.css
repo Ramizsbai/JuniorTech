@@ -4,5 +4,19 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+ 
    
+}
+.input-content{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.content{
+  border: 1px solid black;
+  margin-top: 10%;
+  position: relative;
+  left: 40px;
+  background-color: white;
+  overflow: hidden;
 }

@@ -12,4 +12,4 @@ export class Jobs extends Component {
     }
 }
 
-export default Jobs
+export default Jobs;
