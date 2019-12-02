@@ -10,7 +10,7 @@ export class DesSubComponent extends Component {
             
             <div className= 'SubHeader container-fluid d-flex'>
 
-            <div className= 'container d-flex mt-2'>
+            <div className= 'container d-flex mt-3'>
                 <div className= 'logo'><img src={Logo} alt=""/></div>
                 <div className= 'companyName mt-3 ml-3'>
                     <h5>Digital career institut </h5>

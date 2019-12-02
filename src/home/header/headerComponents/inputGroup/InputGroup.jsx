@@ -5,7 +5,7 @@ import './inputGroup.css';
 export class InputGroup extends Component {
     render() {
         return (
-            <div className="input-group">
+            <div className="input-group mt-4">
               <Form inline className="d-flex justify-content-center">
                 <FormGroup className="mb-2 mr-sm-2 mb-sm-0 ">
                    <Input type="search" name="search" id="exampleSearch" placeholder="Keywords" className="inputGroup" />
@@ -13,7 +13,7 @@ export class InputGroup extends Component {
                 <FormGroup className="mb-2 mr-sm-2 mb-sm-0 ml-3">
                    <Input type="search" name="search" id="exampleSearch2" placeholder="City" className="inputGroup" />
                 </FormGroup>
-                <Button className="searchButton ml-3">Submit</Button>
+               <div  className="searchButton"> <Button className= "border-teal ml-3 ">Submit</Button></div>
                </Form>
             </div>
         )

@@ -7,7 +7,7 @@ class Header extends Component {
     render() {
         return (
             <div className="mainHeader">
-                <div className="mainHeader2">
+                <div className="mainHeader2 mb-5">
                   <Title />
                   <InputGroup />
                 </div>
