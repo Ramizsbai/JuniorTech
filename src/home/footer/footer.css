@@ -1,6 +1,3 @@
-.home-footer {
-    background-image: url(./footer.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.mainDivFooter {
+    display: block;
 }

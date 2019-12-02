@@ -1,21 +1,68 @@
 import React from 'react';
-import { Button } from 'reactstrap';
+import { Button, Row, CardText, Card, Container, Col,  } from 'reactstrap';
 import './card.css';
 
 const Example = (props) => {
     return (
-        <div className="footer-card-home mx-auto">
+    <div>
+         <div className="home-footer" >
+           
+         
+           <div className= 'cardFooter'>
 
-            <div className="footer-card mt-5">
-                <p className="my-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <Button className="searchButton ml-3 my-auto" color="success">Contact Us</Button>
-            </div>
+         <container-fluid >
+        <Row >
+        <Card body outline style={{ backgroundColor: 'none', borderColor: '#fff' }}>
+            <Row style={{padding: '10px'}}>
+          <CardText className='md-6' style={{paddingRight: '10px'}}>With supporting text below as a natural lead-in to additional content.</CardText>
+          <Button >Go somewhere</Button>
+          </Row>
+        </Card>
+         </Row>
+         </container-fluid>
+         </div>
+    
+
+        
+         <div className="bodyFooter">
+<Container>
+  <Row>
+    <Col>
+      <h5>Contact</h5>
+      <p> This content is a little </p>
+      <p> This content is a little </p>
+      <p> This content is a little </p>
+    </Col>
+    <Col>
+      <h5>About</h5>
+      <p>in to additional content.</p>
+      <p>in to additional content.</p>
+      <p>in to additional content.</p>
+    </Col>
+    <Col>
+      <h5>Tamim</h5>
+      <p>Tshow that equal height</p>
+      <p>Tshow that equal height </p>
+      <p>Tshow that equal height </p>
+    </Col>
+  </Row>
+</Container>
+</div>
 
 
+
+
+        </div> 
 
 
         </div>
+   
     );
 };
 
 export default Example;
+
+
+ 
+
+
