@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
-import Card from './footerComponent/card/Card';
-import Contact from './footerComponent/contact/Contact';
-import LastPart from './footerComponent/lastPart/LastPart';
 import './footer.css';
-
+import { Button } from 'reactstrap';
 
 
 export class Footer extends Component {
     render() {
         return (
             <div className="home-footer">
-                <Card />
-                <Contact />
-                <LastPart />
+                <h5 id="Subscribe">Subscribe Now !</h5>
+                <div className="home-footer2 mx-auto">
+                    <input className="input-footer my-auto" type="text" placeholder="Email address"></input>
+                    <Button className="d-flex my-auto" color="success">Send</Button>
+                </div>
+
             </div>
         )
     }
 }
 
-export default Footer
+export default Footer;

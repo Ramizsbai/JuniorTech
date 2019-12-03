@@ -1,15 +1,19 @@
 import React, { Component } from 'react'
-import BodyComponent from './body/bodyComponent/BodyComponent';
-    
+import Header from './header/Header';
+import Footer from './footer/Footer';
 
 export class About extends Component {
     render() {
         return (
             <div>
-                <BodyComponent />
+
+               
+                <Header />
+                <Footer />
+
             </div>
         )
     }
 }
 
-export default About
+export default About;

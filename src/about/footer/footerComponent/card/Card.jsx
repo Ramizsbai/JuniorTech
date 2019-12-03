@@ -10,7 +10,12 @@ const Example = (props) => {
                 <p className="my-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <Button className="searchButton ml-3 my-auto" color="success">Contact Us</Button>
             </div>
+
+
+
+
         </div>
     );
-}
+};
+
 export default Example;
