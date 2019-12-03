@@ -7,16 +7,16 @@
     width: 100%;
 }
 #Subscribe{
-top: 180px;
-left: 138px;
-position: relative;
-color: white;
+    display: flex;
+    padding-top: 200px;
+    padding-left: 110px;
+    color: white;
 }
 .home-footer2{
-    right: 337px;
-    position: relative;
-    top: 200px;
-    border-radius: 10px;
+    display: flex;
+    margin-left: 100px;
+    padding-left: 20px;
+    border-radius: 15px;
     height: 50px;
     width: 25vw;
     background-color: white; 
@@ -24,6 +24,21 @@ color: white;
 .input-footer{
     border: none;
 }
-.home-footer2:focus{
+.input-footer:focus{
     outline: none;
 } 
+.contact-footer{
+    margin-left: 150px;
+    margin-top: 20px;
+    display: flex;
+    list-style-position: outside;
+    flex-direction: column;
+    list-style-type: none;
+}
+/* #col{
+    color: white;
+    margin-top: 50px;
+    border: 1px solid black;
+    list-style-type: none;
+    
+} */ 
