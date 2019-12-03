@@ -3,6 +3,7 @@
     height: 50px;
     border: 2px white;
     background-color: rgba(255,255,255,0.15);
+    border-radius: 9px;
     color: white;
 
 }
@@ -12,6 +13,7 @@
     border: white;
     background-color: rgba(255,255,255,0.15);
     color: white;
+    border-radius: 9px;
 }
 #exampleSearch::placeholder{
     color: white;
@@ -24,3 +26,14 @@
     justify-content: center;
 }
 
+.searchButton Button {
+    width: 120px;
+    height: 45px;
+    border-radius: 11px;
+    border: none;
+    color: #4ABBA7;
+    font-weight: bold;
+    background-color:  #ffffffd5;
+    font-family: 'Oswald', sans-serif;
+
+}
