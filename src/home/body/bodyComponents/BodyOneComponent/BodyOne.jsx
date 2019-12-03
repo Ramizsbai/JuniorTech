@@ -29,9 +29,9 @@ const BodyOne = () => {
       </Media>
       <Media body  className= 'para'>
         <Media className='heading' heading>
-          Employee
+        Quick Apply
         </Media>
-            ingilla. Donec lacinia congue felis in faucibus. <br></br>felis in faucibus.
+        Easily apply to multiple jobs with  <br></br>one click!
       </Media>
     </Media>   
    
@@ -44,7 +44,7 @@ const BodyOne = () => {
       </Media>
       <Media body className= 'para'>
         <Media className='heading' heading>
-        Read our latest article 
+        Read Latest Article 
         </Media>
             Get career development <br></br>advices and application tips.
       </Media>
@@ -59,7 +59,7 @@ const BodyOne = () => {
       </Media>
       <Media body  className= 'para'>
         <Media className='heading' heading>
-        Advanced Filter Option 
+       Employee
         </Media>
             Personalized search algorithm<br></br>to help find the last job offers.
       </Media>
@@ -76,9 +76,9 @@ const BodyOne = () => {
       </Media>
       <Media body  className= 'para'>
         <Media className='heading' heading>
-          Employee
+        Advanced Filter 
         </Media>
-            ingilla. Donec lacinia congue felis in faucibus. <br></br>felis in faucibus.
+        Personalized search algorithm <br></br>to help find the last job offers.
       </Media>
     </Media>
    
@@ -90,9 +90,9 @@ const BodyOne = () => {
       </Media>
       <Media body className= 'para'>
         <Media className='heading' heading>
-        Employee
+        Job Alert Emails
         </Media>
-            ingilla. Donec lacinia congue felis in faucibus. <br></br>felis in faucibus.
+        Keep track of positions that you're <br></br>interested in by subscribe our page.
       </Media>
     </Media>
    
@@ -100,13 +100,13 @@ const BodyOne = () => {
  
     <Media>
       <Media left href="#">
-        <Media object className = 'icon1' src={icon6} alt="icon" />
+        <Media object className = 'icon6' src={icon6} alt="icon" />
       </Media>
       <Media body  className= 'para'>
         <Media className='heading' heading>
-          Employee
+          Salary
         </Media>
-            ingilla. Donec lacinia congue felis in faucibus. <br></br>felis in faucibus.
+            Find all information about your <br></br>potential salary.
       </Media>
     </Media>
     </Row>

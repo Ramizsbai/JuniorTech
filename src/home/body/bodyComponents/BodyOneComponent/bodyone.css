@@ -20,7 +20,7 @@ border: none;
 
 
 .media{
-    margin: auto;
+ margin: 15px;
 }
 
 .media-content{
@@ -55,8 +55,9 @@ border: none;
 }
 
 .para {
-    font-size: 9px;
-    padding: 10px;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    margin: 10px;
  
 }
 
@@ -80,4 +81,8 @@ border: none;
 .button button:hover{
     opacity: 0.8;
     background-color: #2C3A69;
+}
+
+.icon6 {
+    width: 48px
 }
