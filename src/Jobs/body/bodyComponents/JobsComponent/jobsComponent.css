@@ -3,6 +3,10 @@ width: 40%;
 height: 720px;
 overflow-y: scroll ;
 }
+.jobs-body-container{
+	width: 100%;
+	display: flex;
+}
 
 #style-1::-webkit-scrollbar-track
 {
