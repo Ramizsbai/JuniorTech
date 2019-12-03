@@ -44,9 +44,9 @@ const BodyOne = () => {
       </Media>
       <Media body className= 'para'>
         <Media className='heading' heading>
-        Employee
+        Read our latest article 
         </Media>
-            ingilla. Donec lacinia congue felis in faucibus. <br></br>felis in faucibus.
+            Get career development <br></br>advices and application tips.
       </Media>
     </Media>
  
@@ -59,9 +59,9 @@ const BodyOne = () => {
       </Media>
       <Media body  className= 'para'>
         <Media className='heading' heading>
-          Employee
+        Advanced Filter Option 
         </Media>
-            ingilla. Donec lacinia congue felis in faucibus. <br></br>felis in faucibus.
+            Personalized search algorithm<br></br>to help find the last job offers.
       </Media>
     </Media>
     </Row>
