@@ -7,6 +7,7 @@ export class Jobs extends Component {
     
         state = {
          users: [],
+         description: [],
         }
     
 
@@ -17,15 +18,21 @@ export class Jobs extends Component {
             this.setState({users : data})
             console.log(this.state)
         })
-        .catch(console.log)
+        .catch(console.log);
+        
     }
-    render() {
+
+     render() {
+        const descriptionData = (desData) =>{
+            this.setState({description: desData}) 
+            console.log(this.state.description)
+        }
         return (
             <div className="jobs-body-container">
             <div className="jobs-container" id="style-1">
-                <JobsSubComponent users={this.state.users} />
+                <JobsSubComponent users={this.state.users} descriptionData={ descriptionData } />
             </div>
-            <DesComponent />
+                <DesComponent description={this.state.description} />
             </div>
         )
     }

@@ -2,11 +2,14 @@ import React from 'react';
 import './jobsSubComponent.css';
 import logo from './icons/logo.png';
 
-const JobsSubComponent = ({ users }) => {
+const JobsSubComponent = ({ users, descriptionData }) => {
+  
+      
     
         return (
            users.map((user) => (  
-          <div className="jobs-sub-component" key={user.id}>
+          <div className="jobs-sub-component" key={user.id} onClick={ () =>{
+            descriptionData(user);}}>
           <div className="job-post-component container-fluid d-flex mt-3 mb-3">
             <div className="company-logo">
               <img src={logo} alt="company-logo" className="job-company-logo" />
