@@ -20,8 +20,8 @@ const BodyTwo = () => {
         <div className = "title">
         <Container>
              <h1 className="display-5">A lot of Jobs. Find <br/> the One That's Right for you.</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                Quae sapiente doloremque expedita Quae sapiente doloremque expedita 
+            <p>Get the Tech job that you deserve, more than +1000 job offers in a junior position all around Germany apply now! .
+                
             
             </p>
            

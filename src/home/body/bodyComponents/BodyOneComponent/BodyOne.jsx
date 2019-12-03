@@ -100,7 +100,7 @@ const BodyOne = () => {
  
     <Media>
       <Media left href="#">
-        <Media object className = 'icon6' src={icon6} alt="icon" />
+        <Media object className = 'icon1 icon6' src={icon6} alt="icon" />
       </Media>
       <Media body  className= 'para'>
         <Media className='heading' heading>
