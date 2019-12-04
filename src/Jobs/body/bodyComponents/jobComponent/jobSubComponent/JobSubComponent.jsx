@@ -1,39 +1,41 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import './jobSubComponent.css';
 import logo from './icons/logo.png';
 
-const JobSubComponent = (user) => {
- 
+const JobSubComponent = (props) => {
 
-      return (
+    return (
+        <Link to={`/jobs/${props.id}`}>
+            <div className="jobs-sub-component" >
+                <div className="job-post-component container-fluid d-flex mt-3 mb-3">
 
-       <div className="jobs-sub-component" key={user.id} >
-       <div className="job-post-component container-fluid d-flex mt-3 mb-3">
-         <div className="company-logo">
-           <img src={logo} alt="company-logo" className="job-company-logo" />
-         </div>
-         <div className="job-post">
-           <div className="job-post-left d-flex flex-column ml-4">
-             <span className="job-post-title">{user.name}</span>
-             <span className="job-post-company">{user.email}</span>
-             <span className="job-post-location">{user.address}</span>
-           </div>
-           <div className="job-post-right">
-              <div className="job-post-save">
+                    <div className="company-logo">
+                        <img src={logo} alt="company-logo" className="job-company-logo" />
+                    </div>
+                    <div className="job-post">
+                        <div className="job-post-left d-flex flex-column ml-4">
+                            <span className="job-post-title">{props.name}</span>
+                            <span className="job-post-company">{props.email}</span>
+                            <span className="job-post-location">{props.address}</span>
+                        </div>
+                        <div className="job-post-right">
+                            <div className="job-post-save">
 
-              </div>
-              <div className="job-post-skills-lights">
+                            </div>
+                            <div className="job-post-skills-lights">
 
-              </div>
-           </div>
-         </div>
-       </div>
-       <hr className="job-post-line"></hr>
-   </div>
-   
-   )
-     
-    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr className="job-post-line"></hr>
+            </div>
+        </Link>
+    )
+
+
 }
 
 export default JobSubComponent
