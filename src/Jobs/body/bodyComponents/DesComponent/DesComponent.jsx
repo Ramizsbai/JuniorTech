@@ -6,12 +6,15 @@ import './DesSub.css';
 
 class DesComponent extends Component {
     constructor(props){
-     super(props);
-     this.state = {
-         name: props.name,
-     }
-     
+        super(props);
+        this.state = {
+            name: null
+        }
     }
+    
+    
+
+    
     render(){
         return (
             <div className = 'mainDes'>
