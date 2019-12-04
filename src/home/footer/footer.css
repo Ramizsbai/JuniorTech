@@ -27,18 +27,32 @@
 .input-footer:focus{
     outline: none;
 } 
-.contact-footer{
+/* .contact-footer{
     margin-left: 150px;
     margin-top: 20px;
     display: flex;
-    list-style-position: outside;
-    flex-direction: column;
     list-style-type: none;
 }
-/* #col{
+ #col{
     color: white;
     margin-top: 50px;
     border: 1px solid black;
     list-style-type: none;
+    margin-right: 100px;
     
-} */ 
+}  */
+.LastPart{
+    display: flex;
+    border-top: 1px solid white;
+    height: 50px;
+    font-size: 13px;
+    
+}
+.copyright{
+    display: flex;
+    justify-content: flex-start;
+    color: black;
+    width: 50%;
+    height: 100%;
+    padding-bottom: 10px;
+}

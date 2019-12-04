@@ -1,6 +1,7 @@
 
 
 import React, { useState } from 'react';
+import {Link} from 'react-router-dom';
 import logo from './logo.png';
 import './navbar.css';
 import {
@@ -10,7 +11,6 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
 } from 'reactstrap';
 
 const NavBar = (props) => {
@@ -21,18 +21,18 @@ const NavBar = (props) => {
   return (
     <div className="navigation">
       <Navbar color="transparent" light expand="md">
-        <NavbarBrand href="/"><img src={logo} alt="logo" /></NavbarBrand>
+        <NavbarBrand to="/"><img src={logo} alt="logo" /></NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
             <NavItem>
-              <NavLink href='/'><span className="navItems">Home</span></NavLink>
+              <Link to='/'><span className="navItems">Home</span></Link>
             </NavItem>
             <NavItem>
-              <NavLink href='/jobs'><span className="navItems">Jobs</span></NavLink>
+              <Link to='/jobs'><span className="navItems">Jobs</span></Link>
             </NavItem>
             <NavItem>
-              <NavLink href='/about'><span className="navItems">About</span></NavLink>
+              <Link to='/about'><span className="navItems">About</span></Link>
             </NavItem>
           </Nav>
         </Collapse>

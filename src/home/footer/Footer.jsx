@@ -14,24 +14,15 @@ export class Footer extends Component {
                     <input className="input-footer" type="text" placeholder="Email address"></input>
                     <Button className="d-flex ml-3 my-auto" color="success">Send</Button>
                 </div>
-                
-                <div className="contact-footer">
-                    <h4 >Contact Us</h4>
-                    <ul>
-                        <li id="col">Contact Us</li>
-                        <li id="col">Contact Us</li>
-                        <li id="col">Contact Us</li>
-                    </ul>
 
-                    <h4>Contact Us</h4>
-                    <ul>
-                        <li id="col">Contact Us</li>
-                        <li id="col">Contact Us</li>
-                        <li id="col">Contact Us</li>
-                    </ul>
+                
+                <div className="LastPart mx-auto container">
+                    <div className="copyright">
+                        <p className="my-auto">Cobyright by: Stonres</p>
+                    </div>
                 </div>
             </div>
-        )
+        );
     }
 }
 
