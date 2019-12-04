@@ -27,26 +27,32 @@
 .input-footer:focus{
     outline: none;
 } 
-/* .contact-footer{
-    margin-left: 150px;
-    margin-top: 20px;
-    display: flex;
-    list-style-type: none;
+.footer-list {
+      flex-direction: column;
+      text-decoration: none;
+      list-style: none;
 }
- #col{
-    color: white;
-    margin-top: 50px;
-    border: 1px solid black;
-    list-style-type: none;
-    margin-right: 100px;
-    
-}  */
+.footer-list > li {
+    text-align: flex-start;
+    padding-bottom: 10px;
+    margin-left: 10px;
+ }
+.flex-row {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 80px;
+    margin-top: 20px;
+}
+.footer-list1 {
+    color: #fff;
+    font: 2.3vw "Oswald", sans-serif
+}
 .LastPart{
     display: flex;
     border-top: 1px solid white;
     height: 50px;
     font-size: 13px;
-    
+    margin-top: 67px;
 }
 .copyright{
     display: flex;
