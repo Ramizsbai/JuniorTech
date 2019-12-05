@@ -9,7 +9,7 @@
 #Subscribe{
     display: flex;
     padding-top: 200px;
-    padding-left: 110px;
+    padding-left: 95px;
     color: white;
 }
 .home-footer2{
@@ -40,8 +40,8 @@
 .flex-row {
     display: flex;
     flex-flow: row wrap;
-    margin-left: 80px;
-    margin-top: 20px;
+    margin-left: 100px;
+    margin-top: 40px;
 }
 .footer-list1 {
     color: #fff;
@@ -52,7 +52,7 @@
     border-top: 1px solid white;
     height: 50px;
     font-size: 13px;
-    margin-top: 67px;
+    margin-top: 55px;
 }
 .copyright{
     display: flex;
