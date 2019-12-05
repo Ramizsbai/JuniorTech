@@ -18,7 +18,7 @@ const JobSubComponent = (props) => {
                         <div className="job-post-left d-flex flex-column ml-4">
                             <span className="job-post-title">{props.name}</span>
                             <span className="job-post-company">{props.email}</span>
-                            <span className="job-post-location">{props.address}</span>
+                            <span className="job-post-location">{props.city}</span>
                         </div>
                         <div className="job-post-right">
                             <div className="job-post-save">
