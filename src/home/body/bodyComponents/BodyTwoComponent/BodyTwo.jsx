@@ -1,6 +1,6 @@
 import React from "react";
 import './bodytwo.css';
-import Photo from './work-photo.svg';
+import Photo from './work.svg';
 import {Button, Container, Row } from 'reactstrap';
 
 
@@ -30,7 +30,7 @@ const BodyTwo = () => {
             </Container>
         </div>
 
-       <img className= 'photo' src={Photo} alt="work-photo"/>
+       <img className= 'photo' src={Photo} alt="work"/>
         </Row>
         </Container>
         </div>
