@@ -3,18 +3,9 @@ import './bodytwo.css';
 import Photo from './work.svg';
 import {Button, Container, Row } from 'reactstrap';
 
-
-
-
-
 const BodyTwo = () => {
-
-
-
-   
     return(
         <div className = "main-div">
-
         <Container className='container'>
             <Row className= 'Row'>
         <div className = "title">
@@ -30,7 +21,7 @@ const BodyTwo = () => {
             </Container>
         </div>
 
-       <img className= 'photo' src={Photo} alt="work"/>
+       <img className= 'photo' src={Photo} alt="work-img"/>
         </Row>
         </Container>
         </div>

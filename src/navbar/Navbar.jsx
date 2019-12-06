@@ -1,5 +1,3 @@
-
-
 import React, { useState } from 'react';
 import {Link} from 'react-router-dom';
 import logo from './logo.png';
@@ -20,8 +18,8 @@ const NavBar = (props) => {
 
   return (
     <div className="navigation">
-      <Navbar color="transparent" light expand="md">
-        <NavbarBrand to="/"><img src={logo} alt="logo" /></NavbarBrand>
+      <Navbar light expand="md">
+        <NavbarBrand href="/"><img src={logo} alt="logo" /></NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>

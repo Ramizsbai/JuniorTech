@@ -3,7 +3,6 @@ import './footer.css';
 import { Button } from 'reactstrap';
 
 
-
 export class Footer extends Component {
     render() {
         return (
