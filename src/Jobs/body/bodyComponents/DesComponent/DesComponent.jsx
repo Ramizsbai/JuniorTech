@@ -9,14 +9,20 @@ class DesComponent extends Component {
         super(props);
         this.state = {
             loading: true,
-            user: [],
+            jobs: [],
             error: null,
         }
     }
 
     fetchUserData = (id) => {
         this.setState({ loading: true })
-        fetch('https://jsonplaceholder.typicode.com/users/' + id)
+        fetch("https://jobsapi.p.rapidapi.com/api/job?api_token=iyOSd0gsuR9TZIqWe9wAWuRbLai0HYCmLG3OrUFfFct1ePozfiCoZlOVKVfqfTMGung2IxC9LY2WGZUf", {
+            "method": "GET",
+            "headers": {
+                "x-rapidapi-host": "jobsapi.p.rapidapi.com",
+                "x-rapidapi-key": "4cd53743a9msh5356cec67043751p197680jsn086dd4e1ed05"
+            }
+        })
             .then(response => response.json())
             .then(data => {
                 console.log(data)
@@ -55,7 +61,7 @@ class DesComponent extends Component {
             return <div>There was an error while fetching the data from the server</div>
         }
 
-        const user = this.state.user;
+        const jobDes = this.state.jobs;
 
         return (
             <div className='mainDes'>
@@ -66,11 +72,11 @@ class DesComponent extends Component {
                         <div className='container d-flex mt-3'>
                             <div className='logo'><img src={Logo} alt="" /></div>
                             <div className='companyName mt-3 ml-3'>
-                                <h5>{user.name}</h5>
-                                <div className='location'><p>{user.city}</p></div>
+                                <h5>{jobDes.title}</h5>
+                                <div className='location'><p>{jobDes.city}</p></div>
                             </div>
 
-                            <div>{user.id}</div>
+                            <div>{jobDes.id}</div>
 
                         </div>
                         <div className='applyButton mt-4'><Button>Apply</Button></div>
