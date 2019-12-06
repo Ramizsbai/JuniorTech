@@ -4,5 +4,26 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-   
+}
+.job-header{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 72px;
+  border-width: 1px;
+  border-radius: 15px;
+  height: 60px;
+  width: 58vw;
+  background-color: white; 
+}
+.header-input-jobs{
+  border: none;
+}
+.black-line{
+  width: 2px;
+  height: 100%;
+  background-color: black;
+}
+.header-input-jobs:focus{
+  outline: none;
 }

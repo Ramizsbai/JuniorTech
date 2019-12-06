@@ -1,20 +1,11 @@
-import React from "react"
-import './Bodytwo.css'
-import Photo from './work-photo.svg'
-import {Button, Container, Row } from 'reactstrap'
-
-
-
-
+import React from "react";
+import './bodytwo.css';
+import Photo from './work.svg';
+import {Button, Container, Row } from 'reactstrap';
 
 const BodyTwo = () => {
-
-
-
-   
     return(
         <div className = "main-div">
-
         <Container className='container'>
             <Row className= 'Row'>
         <div className = "title">
@@ -38,4 +29,4 @@ const BodyTwo = () => {
 }
  
 
-export default BodyTwo
+export default BodyTwo;
