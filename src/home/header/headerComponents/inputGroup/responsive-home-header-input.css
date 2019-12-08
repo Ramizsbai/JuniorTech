@@ -1,0 +1,25 @@
+@media only screen and (min-width: 200px) and (max-width: 767px) {
+    .header-input {
+        flex-direction: column;
+    }
+
+    #exampleSearch2 {
+        width: 50vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5px;
+    }
+
+    #exampleSearch1 {
+        width: 50vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5px;
+
+    }
+
+    .searchButton {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

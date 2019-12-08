@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './title.css';
+import './responsive-home-header-title.css';
 
 export class Title extends Component {
     render() {

@@ -7,7 +7,7 @@ import Footer from './footer/Footer';
 
 
 
- class Home extends Component {
+class Home extends Component {
     render() {
         return (
             <div className="bg-image">
