@@ -1,11 +1,21 @@
-.h1,
-.h5 {
+.first-header {
     color: white;
     font-family: 'Oswald', sans-serif;
     font-weight: bolder;
 
     letter-spacing: 1.5px;
     text-shadow: rgba(0, 0, 0, 0.103) -6px 1px;
+    font-size: 30px;
+}
+
+.second-header {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bolder;
+
+    letter-spacing: 1.5px;
+    text-shadow: rgba(0, 0, 0, 0.103) -6px 1px;
+    font-size: 18px;
 }
 
 .first-step {

@@ -1,7 +1,28 @@
 @media only screen and (min-width: 200px) and (max-width: 767px) {
-    .h1 {
-        font-size: 20px;
+    .first-header {
+        color: white;
+        font-family: 'Oswald', sans-serif;
+        font-weight: bolder;
+
+        letter-spacing: 1.5px;
+        text-shadow: rgba(0, 0, 0, 0.103) -6px 1px;
+        font-size: 25px;
+        padding-top: 100px;
     }
 
+    .second-header {
+        color: white;
+        font-family: 'Oswald', sans-serif;
+        font-weight: bolder;
+
+        letter-spacing: 1.5px;
+        text-shadow: rgba(0, 0, 0, 0.103) -6px 1px;
+        font-size: 14px;
+    }
+
+    .first-step {
+        font-size: 34px;
+
+    }
 
 }
