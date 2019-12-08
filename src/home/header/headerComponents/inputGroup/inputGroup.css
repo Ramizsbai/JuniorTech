@@ -18,11 +18,12 @@
 }
 
 #exampleSearch1::placeholder {
-    color: white;
+    color: rgba(255, 255, 255, 0.664);
+
 }
 
 #exampleSearch2::placeholder {
-    color: white;
+    color: rgba(255, 255, 255, 0.664);
 }
 
 .input-group {

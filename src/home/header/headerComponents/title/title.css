@@ -20,14 +20,12 @@
 
 .Tech {
 
-    background-size: contain;
-    color: transparent;
-    font-weight: 900;
-    font-size: 70px;
-    background-color: #4ABBA7;
-    text-shadow: 5px 5px 1px rgba(0, 167, 103, 0.253);
+    background-color: #00976a;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
-
+    color: transparent;
+    text-shadow: rgba(245, 245, 245, 0.322) 3px 5px 1px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 62px;
 }
