@@ -1,11 +1,6 @@
-body {
-    box-sizing: border-box;
-
-}
-
-.bg-image {
+.home-page {
     display: flex;
     flex-direction: column;
-    background-color: none;
-  
+    background-color: #f2f2f2;
+
 }

@@ -2,6 +2,7 @@ import React from "react"
 import './Bodytwo.css'
 import Photo from './work-photo.svg'
 import {Button, Container, Row } from 'reactstrap'
+import './responsive-home-body-two.css'
 
 
 
@@ -26,11 +27,11 @@ const BodyTwo = () => {
             </p>
            
             
-            <div className= 'butt'><Button>Search job</Button></div>
+            <div className='butt'><Button className='search-job'>Search job</Button></div>
             </Container>
         </div>
 
-       <img className= 'photo' src={Photo} alt="work-img"/>
+       <img className='photo' src={Photo} alt="work-img"/>
         </Row>
         </Container>
         </div>

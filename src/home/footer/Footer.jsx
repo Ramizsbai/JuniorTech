@@ -10,7 +10,10 @@ export class Footer extends Component {
         return (
 
 
-            <div className="home-footer">
+            <div className="footer-home">
+                <div className="footer-image">
+
+                </div>
 
             </div>
         )
