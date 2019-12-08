@@ -7,7 +7,7 @@ export class About extends Component {
         return (
             <div>
 
-               
+
                 <Header />
                 <Footer />
 
