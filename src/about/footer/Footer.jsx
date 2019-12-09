@@ -5,11 +5,14 @@ import Icon from './facebook.png';
 import Icon1 from './instagram.png';
 import Icon2 from './linkedin.png';
 import Icon3 from './twitter.png';
+import './responsive-about-footer.css'
+
 
 
 export class Footer extends Component {
     render() {
         return (
+
             <div className="home-footer">
 
                 <h2 id="Subscribe"> Subscribe Now ! </h2>
@@ -56,5 +59,4 @@ export class Footer extends Component {
         );
     }
 }
-
 export default Footer;

@@ -1,0 +1,30 @@
+@media only screen and (min-width: 200px) and (max-width: 767px) {
+    .title {
+        padding-top: 10px;
+    }
+
+    .photo {
+        padding-top: 5px;
+        width: 65%;
+        height: 200px;
+    }
+
+    .butt {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .photo {
+        padding-top: 5px;
+        width: 65%;
+        height: 260px;
+        margin-top: 40px;
+    }
+
+    .butt {
+        display: flex;
+        justify-content: center;
+    }
+}
