@@ -1,0 +1,53 @@
+@media only screen and (min-width: 200px) and (max-width: 767px) {
+
+    .about-footer {
+        background-image: url(./iphone7.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 600px;
+        width: 100%;
+
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .about-footer {
+        background-image: url(./ipad.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 600px;
+        width: 100%;
+
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+
+
+    .about-footer {
+        background-image: url(./commonDesktop.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 600px;
+        width: 100%;
+
+    }
+}
+
+@media only screen and (min-width: 1281px) and (max-width: 1680px) {
+
+    .about-footer {
+        background-image: url(./commonDesktop.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 600px;
+        width: 100%;
+
+    }
+}

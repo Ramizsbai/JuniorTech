@@ -6,13 +6,13 @@ class JobComponent extends Component {
 
 
   render() {
-    let users = this.props.users
+    let jobs = this.props.jobs
     return (
       <div>
         {
-          users.map((user) => (
+          jobs.map((job) => (
 
-            <JobSubComponent id={user.id} name={user.name} key={user.id} email={user.email} city={user.address.city} />
+            <JobSubComponent id={job.id} title={job.title} key={job.id} company={job.employer.name} city={job.locations.data.city} />
 
           ))
         }

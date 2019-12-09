@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import './footer.css';
-
+import './responsive-about-footer.css'
 
 
 export class Footer extends Component {
     render() {
         return (
-            <div className="home-footer">
-               
+            <div className="about-footer">
+
             </div>
         )
     }
