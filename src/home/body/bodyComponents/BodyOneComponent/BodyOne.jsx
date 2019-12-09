@@ -1,5 +1,6 @@
 import React from 'react'
 import './bodyone.css'
+import './responsive-home-body-one.css'
 import icon1 from './icons1.png'
 import icon2 from './icons2.png'
 import icon3 from './icons3.png'
@@ -12,13 +13,12 @@ import { Media, Button, Container, Row } from 'reactstrap'
 const BodyOne = () => {
   return (
 
-    
+
     <div className='media-object'>
- 
-    <div className='header'><h2>Browse Jobs By Specialisms</h2></div>
 
-      <div className= 'media'>
+      <div className='header'><p>Browse Jobs By Specialisms</p></div>
 
+      <div className='media'>
 
         <div className= 'media-content'>
     <Container>
@@ -46,10 +46,9 @@ const BodyOne = () => {
         <Media className='heading' heading>
         Read Latest Article 
         </Media>
-            Get career development <br></br>advices and application tips.
+                  Get career development <br></br>advices and application tips.
       </Media>
-    </Media>
- 
+              </Media>
 
 
   
@@ -64,8 +63,8 @@ const BodyOne = () => {
         Help junior tech professionels to<br></br>find
             positions matching their skills.
       </Media>
-    </Media>
-    </Row>
+              </Media>
+            </Row>
 
 
   
@@ -81,8 +80,7 @@ const BodyOne = () => {
         </Media>
         Personalized search algorithm <br></br>to help find the last job offers.
       </Media>
-    </Media>
-   
+              </Media>
 
    
     <Media>
@@ -95,8 +93,7 @@ const BodyOne = () => {
         </Media>
         Keep track of positions that you're <br></br>interested in by subscribe our page.
       </Media>
-    </Media>
-   
+              </Media>
 
  
     <Media>
@@ -109,20 +106,20 @@ const BodyOne = () => {
         </Media>
             Find all information about your <br></br>potential salary.
       </Media>
-    </Media>
-    </Row>
+              </Media>
+            </Row>
 
-   
-  
-  
-    <div className= 'button' ><Button>Search Job</Button>{''}</div> 
-  
-    </Container>
-    </div>
-    </div>
-</div>
 
-    
+
+
+            <div className='button' ><Button>Search Job</Button>{''}</div>
+
+          </Container>
+        </div>
+      </div>
+    </div>
+
+
   );
 };
 

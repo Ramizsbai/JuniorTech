@@ -3,8 +3,8 @@ import Header from './header/Header';
 import Body from './body/Body'
 
 
-
 export class Jobs extends Component {
+
     render() {
         return (
             <div>
@@ -15,4 +15,4 @@ export class Jobs extends Component {
     }
 }
 
-export default Jobs
+export default Jobs;
