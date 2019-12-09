@@ -38,9 +38,9 @@ const BodyOne = () => {
     
 
    
-    <Media>
+    <Media >
       <Media left href="#">
-        <Media object className = 'icon2'src={icon2} alt="icon" />
+        <Media object className = 'icon2 'src={icon2} alt="icon" />
       </Media>
       <Media body className= 'para'>
         <Media className='heading' heading>
@@ -52,11 +52,11 @@ const BodyOne = () => {
 
 
   
-    <Media>
+    <Media className = "icon-none">
       <Media left href="#">
-        <Media object className = 'icon1' src={icon3} alt="icon" />
+        <Media object className = 'icon1 icon-none' src={icon3} alt="icon" />
       </Media>
-      <Media body  className= 'para'>
+      <Media body  className= 'para icon-none'>
         <Media className='heading' heading>
         Specialized Search
         </Media>
@@ -98,9 +98,9 @@ const BodyOne = () => {
  
     <Media>
       <Media left href="#">
-        <Media object className = 'icon1 icon6' src={icon6} alt="icon" />
+        <Media object className = 'icon1 icon-none' src={icon6} alt="icon" />
       </Media>
-      <Media body  className= 'para'>
+      <Media body  className= 'para icon-none'>
         <Media className='heading' heading>
           Salary
         </Media>

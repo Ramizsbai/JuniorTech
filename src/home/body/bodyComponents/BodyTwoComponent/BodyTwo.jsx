@@ -17,12 +17,12 @@ const BodyTwo = () => {
             </p>
            
             
-            <div className='butt-search'><Button className='search-job'>Search job</Button></div>
+            <div className='butt-search'><Button path='/jobs' className='search-job'>Search job</Button></div>
             </Container>
         </div>
 
        <img className='photo' src={Photo} alt="work-img"/>
-       <div className='butt-none'><Button className='search-job'>Search job</Button></div>
+       <div className='butt-none'><Button path='/jobs' className='search-job'>Search job</Button></div>
         </Row>
         </Container>
         </div>
