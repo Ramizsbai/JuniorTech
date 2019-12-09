@@ -1,36 +1,28 @@
-import React from "react"
-import './Bodytwo.css'
-import Photo from './work-photo.svg'
-import {Button, Container, Row } from 'reactstrap'
-
-
-
-
+import React from "react";
+import './bodytwo.css';
+import './responsive-home-body-two.css'
+import Photo from './work.svg';
+import {Button, Container, Row } from 'reactstrap';
 
 const BodyTwo = () => {
-
-
-
-   
     return(
         <div className = "main-div">
-
         <Container className='container'>
             <Row className= 'Row'>
         <div className = "title">
         <Container>
-             <h1 className="display-5">A lot of Jobs. Find <br/> the One That's Right for you.</h1>
+             <p className="body-two-text">Find the right job</p>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                 Quae sapiente doloremque expedita Quae sapiente doloremque expedita 
             
             </p>
            
             
-            <div className= 'butt'><Button>Search job</Button></div>
+            <div className='butt'><Button className='search-job'>Search job</Button></div>
             </Container>
         </div>
 
-       <img className= 'photo' src={Photo} alt="work-photo"/>
+       <img className='photo' src={Photo} alt="work-img"/>
         </Row>
         </Container>
         </div>
@@ -38,4 +30,4 @@ const BodyTwo = () => {
 }
  
 
-export default BodyTwo
+export default BodyTwo;

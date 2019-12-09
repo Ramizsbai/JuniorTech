@@ -1,0 +1,8 @@
+.about-footer {
+    background-image: url(../../responsive/commonDesktop.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+}

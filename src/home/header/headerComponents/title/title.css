@@ -1,5 +1,31 @@
-.h1, .h5{
+.first-header {
     color: white;
     font-family: 'Oswald', sans-serif;
+    font-weight: bolder;
 
+    letter-spacing: 1.5px;
+    text-shadow: rgba(0, 0, 0, 0.103) -6px 1px;
+    font-size: 40px;
+}
+
+.second-header {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bolder;
+
+    letter-spacing: 1.5px;
+    text-shadow: rgba(0, 0, 0, 0.103) -6px 1px;
+    font-size: 28px;
+}
+
+.Tech {
+
+    background-color: #00976a;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgba(245, 245, 245, 0.322) 3px 5px 1px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 62px;
 }

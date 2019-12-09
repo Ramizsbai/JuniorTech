@@ -1,33 +1,31 @@
-
-
-  
-
- .main-div {
-   padding-top: 50px;
-   height: auto;
+.main-div {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: auto;
+    background-color: #f2f2f2;
 
 }
 
-   
-.Row{
+
+.Row {
     display: flex;
     justify-content: center;
-   
-  
+
+
 }
 
-.title{
-    padding-top: 130px;
+.title {
+    padding-top: 10px;
     width: 500px;
 }
 
-.title h1{
+.title h1 {
     font-family: 'Oswald', sans-serif;
     letter-spacing: 1.5px;
     padding-bottom: 10px;
 }
 
-.butt{
+.butt {
     padding-top: 25px;
 }
 
@@ -38,20 +36,33 @@
     font-family: 'Oswald', sans-serif;
     letter-spacing: 1.5px;
     border: none;
-  
+
 }
 
-.butt button:hover{
+.butt button:hover {
     opacity: 0.8;
     background-color: #2C3A69;
 }
 
-.photo { 
-padding-top: 80px;
-  width: 45%;
-  height: auto;
-} 
+.photo {
 
+    width: 45%;
+    height: auto;
+}
+
+.body-two-text {
+    color: #2C3A69;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: #2C3A69;
+    font-weight: bolder;
+}
 
 
 
