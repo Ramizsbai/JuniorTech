@@ -2,24 +2,30 @@
 
   #filter{
     border: 2px solid grey;
-    padding: 10px;
+    padding: 20px;
     margin: 0px;
+    height: 80px;
     border-radius: 1px 1px 15px 15px;
   }
 .add-Button button{
-  border-radius: 9px;
+  border-radius: 8px;
 
 } 
+
 
   .JobTypeAndCategory {
     display: flex;
     padding-left: 60px;
-
   }
+
 
   .DropdownToggleCategory {
     margin-left: 10px;
+  }
 
+
+  .DropdownToggleCategory #buttonDropdownn{
+    width: 150px;
   }
 
  

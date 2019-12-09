@@ -11,11 +11,8 @@ export class Jobs extends Component {
         return (
             <div>
                 <Header />
-
                 <Filter />
-
-                <Body />                
-
+                <Body />               
             </div>
         )
     }

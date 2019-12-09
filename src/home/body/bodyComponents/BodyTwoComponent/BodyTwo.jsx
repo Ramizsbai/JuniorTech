@@ -12,17 +12,17 @@ const BodyTwo = () => {
         <div className = "title">
         <Container>
              <p className="body-two-text">Find the right job</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                Quae sapiente doloremque expedita Quae sapiente doloremque expedita 
+            <p>Get the Tech job that you deserve, more than +1000 job offers in a junior position all around Germany apply now! .
             
             </p>
            
             
-            <div className='butt'><Button className='search-job'>Search job</Button></div>
+            <div className='butt-search'><Button path='/jobs' className='search-job'>Search job</Button></div>
             </Container>
         </div>
 
        <img className='photo' src={Photo} alt="work-img"/>
+       <div className='butt-none'><Button path='/jobs' className='search-job'>Search job</Button></div>
         </Row>
         </Container>
         </div>

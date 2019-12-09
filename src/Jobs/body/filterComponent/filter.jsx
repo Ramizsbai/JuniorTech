@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button } from 'reactstrap';
 import './filter.css';
-import { Container, Row, Col, Input, InputGroup, InputGroupAddon, InputGroupText, ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem,  } from 'reactstrap';
+import { Container, Row, Col, Input, InputGroup, InputGroupAddon, ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem,  } from 'reactstrap';
 
 const Filter = (props) => {
   const [dropdownOpen, setOpen] = useState(false);
@@ -18,7 +18,7 @@ const Filter = (props) => {
               <InputGroup>
                 <Input placeholder="skills" />
                 <div className="add-Button"><Button  color="primary">Add</Button>{' '}</div>
-
+​
                 <InputGroupAddon addonType="append">
                              
                 </InputGroupAddon>
@@ -29,16 +29,16 @@ const Filter = (props) => {
             <div className='skillJob'>
               <Button id='firtsButtonFilter' color="muted text-white">Html</Button>{' '}
               <Button id='secondButtonFilter' color="muted text-white">CSS</Button>{' '}
-              <Button id='thirdButtonFilter'color="muted text-white">JavaScript</Button>{' '}
+              <Button id='thirdButtonFilter' color="muted text-white">JavaScript</Button>{' '}
             </div></Col>
           <Col>
-          {/* ---------------------------- */}
+
             <div class="JobTypeAndCategory">
               <div class="ButtonDropdownJobType">
-                <ButtonDropdown isOpen={dropdownOpen} toggle={toggle}>
-                <DropdownToggle color="muted" className="block-example border border-muted" caret>
+                <ButtonDropdown id= 'ButtonDropdown' isOpen={dropdownOpen} toggle={toggle}>
+                <DropdownToggle color="muted" className="block-example border border-muted" caret >
                   Job type
-                </DropdownToggle  >
+                </DropdownToggle>
                 <DropdownMenu  >
                   <DropdownItem >Job type 1</DropdownItem>
                   <DropdownItem divider />
@@ -48,7 +48,7 @@ const Filter = (props) => {
               </div>
               <div>
                   <div className="DropdownToggleCategory">
-            <ButtonDropdown isOpen={dropdownOpen} toggle={toggle}>
+            <ButtonDropdown id= 'ButtonDropdownn' isOpen={dropdownOpen} toggle={toggle}>
               <DropdownToggle color="muted" className="block-example border border-muted" caret>
                 Category
           </DropdownToggle>
@@ -58,9 +58,9 @@ const Filter = (props) => {
                 <DropdownItem>Category 2</DropdownItem>
               </DropdownMenu>
             </ButtonDropdown>
-
+​
           
-
+​
           </div>
               </div>
             </div>
@@ -73,11 +73,13 @@ const Filter = (props) => {
           </Col>
           
         </Row>
-
+​
       </Container>
-
+​
     </div>
   );
-}
+ }
+ 
+ 
 
 export default Filter;
