@@ -59,9 +59,10 @@ const BodyOne = () => {
       </Media>
       <Media body  className= 'para'>
         <Media className='heading' heading>
-       Employee
+        Specialized Search
         </Media>
-            Personalized search algorithm<br></br>to help find the last job offers.
+        Help junior tech professionels to<br></br>find
+            positions matching their skills.
       </Media>
     </Media>
     </Row>

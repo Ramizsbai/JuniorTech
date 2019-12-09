@@ -30,7 +30,8 @@ const BodyTwo = () => {
             </Container>
         </div>
 
-       <img className= 'photo' src={Photo} alt="work-img"/>
+        <img className= 'photo' src={Photo} alt="work-img"/>
+      
         </Row>
         </Container>
         </div>

@@ -30,6 +30,7 @@
 
 .title p {
     letter-spacing: 0.5px;
+    color: rgb(83, 83, 83);
 }
 
 .butt{
@@ -37,22 +38,24 @@
 }
 
 .butt button {
+    color: white;
     width: 180px;
     height: 50px;
-    background-color: #2C3A69;
+    background-color:rgba(73, 73, 77, 0.931);
     font-family: 'Oswald', sans-serif;
     letter-spacing: 1.5px;
     border: none;
-  
+    border-radius: 15px;
 }
 
 .butt button:hover{
     opacity: 0.8;
-    background-color: #2C3A69;
+    background-color: rgba(64, 61, 86, 0.849)
 }
 
 .photo { 
-padding-top: 80px;
+    margin-top: 80px;
+    margin-bottom: 30px;
   width: 45%;
   height: auto;
 } 

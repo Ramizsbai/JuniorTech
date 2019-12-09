@@ -10,8 +10,8 @@ border: none;
 } 
 
 .header {
-    padding-top: 50px;
-    padding-bottom: 70px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     text-align: center;
     font-family: 'Oswald', sans-serif;
     letter-spacing: 1.5px;
@@ -62,25 +62,25 @@ border: none;
 }
 
 .button{
-    padding-top: 60px;
+    margin-top: 30px;
     text-align: center;
-    padding-right: 15px;
 }
 
 .button button{
     width: 200px;
     height: 50px;
-    background-color: #2C3A69;
+    background-color: rgba(60, 57, 82, 0.904);
     border: none;
     font-family: 'Oswald', sans-serif;
     letter-spacing: 1.5px;
     opacity: 1;  
     transition: 0.3s;
+    border-radius: 15px;
 }
 
 .button button:hover{
     opacity: 0.8;
-    background-color: #2C3A69;
+    background-color: rgba(60, 57, 82, 0.904);
 }
 
 .icon6 {

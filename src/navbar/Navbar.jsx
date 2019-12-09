@@ -13,13 +13,20 @@ import {
   NavLink,
 } from 'reactstrap';
 
+
+
 const NavBar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
 
+  // window.onscroll = () => {
+  //   const Nav = document.querySelector('.navigation');
+  //   if(this.scroll <= 100) Nav.className = ''; else Nav.className = 'scroll';
+  // };
+
   return (
-    <div className="navigation">
+    <div className="navigation nav-scrolled">
       <Navbar color="transparent" light expand="md">
         <NavbarBrand href="/"><img src={logo} alt="logo" /></NavbarBrand>
         <NavbarToggler onClick={toggle} />
