@@ -1,5 +1,5 @@
 .footer-image {
-    background-image: url(./commonDesktop.png);
+    background-image: url(./footer-common.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -14,7 +14,7 @@
 
 #Subscribe {
     display: flex;
-    padding-top: 200px;
+    padding-top: 50px;
     padding-left: 95px;
     color: white;
 }
@@ -25,12 +25,14 @@
     padding-left: 20px;
     border-radius: 15px;
     height: 50px;
-    width: 25vw;
+    width: 17vw;
     background-color: white;
 }
 
 .input-footer {
     border: none;
+
+
 }
 
 .input-footer:focus {
