@@ -13,16 +13,21 @@ class DesComponent extends Component {
             error: null,
         }
     }
+    headers = {
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Methods': 'GET',
+    }
 
     fetchUserData = (id) => {
         this.setState({ loading: true })
-        fetch("https://jobsapi.p.rapidapi.com/api/job?api_token=iyOSd0gsuR9TZIqWe9wAWuRbLai0HYCmLG3OrUFfFct1ePozfiCoZlOVKVfqfTMGung2IxC9LY2WGZUf", {
-            "method": "GET",
-            "headers": {
-                "x-rapidapi-host": "jobsapi.p.rapidapi.com",
-                "x-rapidapi-key": "4cd53743a9msh5356cec67043751p197680jsn086dd4e1ed05"
-            }
-        })
+        const job = 'java';
+        const city = 'berlin';
+        const APP_ID1 = 'c7212bc0';
+        const API_KEY1 = '3ae54560f5840fd67f71ae9bd4f53330';
+        const url = `https://cors-anywhere.herokuapp.com/http://api.adzuna.com:80/v1/api/jobs/de/search/1?app_id=${APP_ID1}&app_key=${API_KEY1}&results_per_page=20&what=${job}&where=${city}&content-type=application/json`
+        fetch(url)
+
             .then(response => response.json())
             .then(data => {
                 console.log(data)
@@ -62,6 +67,7 @@ class DesComponent extends Component {
         }
 
         const jobDes = this.state.jobs;
+        console.log(this.state.jobs + "this one")
 
         return (
             <div className='mainDes'>

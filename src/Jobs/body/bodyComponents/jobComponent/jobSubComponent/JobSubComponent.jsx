@@ -7,6 +7,7 @@ import logo from './icons/logo.png';
 const JobSubComponent = (props) => {
 
     return (
+
         <Link to={`/jobs/${props.id}`}>
             <div className="jobs-sub-component" >
                 <div className="job-post-component container-fluid d-flex mt-3 mb-3">

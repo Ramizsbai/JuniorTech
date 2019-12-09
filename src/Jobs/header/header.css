@@ -19,22 +19,32 @@
   overflow: hidden;
 }
 
-.header-input-jobs {
+.jobs-location-input {
   border: none;
   background-color: transparent;
+  border-left: 3px solid rgb(0, 187, 115);
 }
 
-.header-input-jobs::placeholder {
+.jobs-location-input::placeholder {
   text-align: center;
   color: black;
   opacity: 0.2;
   font-size: 19px;
 }
 
-.green-line {
-  width: 3px;
-  height: 100%;
-  background-color: rgb(0, 214, 150);
+.jobs-title-input {
+  border-right-color: #2C3A69;
+  border: none;
+  background-color: transparent;
+  margin-right: 20px;
+
+}
+
+.jobs-title-input::placeholder {
+  text-align: center;
+  color: black;
+  opacity: 0.2;
+  font-size: 19px;
 }
 
 .header-input-jobs:focus {
