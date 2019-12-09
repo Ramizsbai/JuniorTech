@@ -15,7 +15,7 @@
 }
 
 .title {
-    padding-top: 130px;
+    padding-top: 10px;
     width: 500px;
 }
 
@@ -45,11 +45,24 @@
 }
 
 .photo {
-    padding-top: 80px;
+
     width: 45%;
     height: auto;
 }
 
+.body-two-text {
+    color: #2C3A69;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: #2C3A69;
+    font-weight: bolder;
+}
 
 
 

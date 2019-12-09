@@ -3,8 +3,9 @@
     height: 50px;
     border: 2px white;
     background-color: rgba(255, 255, 255, 0.15);
-    border-radius: 9px;
+    border-radius: 3px;
     color: white;
+    margin-right: 10px;
 
 }
 
@@ -14,7 +15,8 @@
     border: white;
     background-color: rgba(255, 255, 255, 0.15);
     color: white;
-    border-radius: 9px;
+    border-radius: 3px;
+    margin-right: 10px;
 }
 
 #exampleSearch1::placeholder {
@@ -34,7 +36,7 @@
 .searchButton Button {
     width: 120px;
     height: 45px;
-    border-radius: 11px;
+    border-radius: 6px;
     border: none;
     color: #4ABBA7;
     font-weight: bold;

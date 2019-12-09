@@ -19,6 +19,12 @@
     .photo {
         padding-top: 5px;
         width: 65%;
-        height: 200px;
+        height: 260px;
+        margin-top: 40px;
+    }
+
+    .butt {
+        display: flex;
+        justify-content: center;
     }
 }

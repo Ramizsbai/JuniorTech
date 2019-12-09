@@ -7,7 +7,7 @@ import Title from './headerComponents/title/Title';
 class Header extends Component {
     render() {
         return (
-            <div className="mainHeader">
+            <div className="header-design">
                 <div className="mainHeader2 mb-5">
                     <Title />
                     <InputGroup />

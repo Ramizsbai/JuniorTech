@@ -20,7 +20,7 @@ const BodyTwo = () => {
             <Row className= 'Row'>
         <div className = "title">
         <Container>
-             <h1 className="display-5">A lot of Jobs. Find <br/> the One That's Right for you.</h1>
+             <p className="body-two-text">Find the right job</p>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                 Quae sapiente doloremque expedita Quae sapiente doloremque expedita 
             
