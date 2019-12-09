@@ -7,10 +7,10 @@ export class Header extends Component {
         return (
             <div className="jobs-header">
                 <div className="job-header mx-auto">
-                    <input className="header-input-jobs my-auto" type="text" placeholder="Job Title"></input>
-                    <div className="black-line mr-5"></div>
+                    <input className="header-input-jobs my-auto mr-5" type="text" placeholder="Job Title"></input>
+                    <div className="green-line mr-5"></div>
                     <input className="header-input-jobs my-auto" type="text" placeholder="Location"></input>
-                    <Button className="d-flex my-auto" color="success">Search</Button>
+                    <div className="my-auto button-background"><Button color="info" className='searchButton my-auto'>Search</Button></div>
                 </div>
             </div>
 
