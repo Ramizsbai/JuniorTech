@@ -1,0 +1,10 @@
+.head{
+    display: flex;
+    padding-top: 150px;
+    margin-left: 25px;
+}
+.body{
+    display: flex;
+    width: 70vh;
+    margin-left: 25px;
+}

@@ -23,8 +23,6 @@ const DesSubComponent = (description) =>{
             <div className='applyButton mt-4'><Button>Apply</Button></div>
             </div>
 
-
-
             </div>
         )
     }

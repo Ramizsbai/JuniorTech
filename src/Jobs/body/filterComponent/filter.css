@@ -1,0 +1,63 @@
+
+
+  #filter{
+    border: 2px solid grey;
+    padding: 20px;
+    margin: 0px;
+    height: 80px;
+    border-radius: 1px 1px 15px 15px;
+  }
+.add-Button button{
+  border-radius: 8px;
+
+} 
+
+
+  .JobTypeAndCategory {
+    display: flex;
+    padding-left: 60px;
+  }
+
+
+  .DropdownToggleCategory {
+    margin-left: 10px;
+  }
+
+
+  .DropdownToggleCategory #buttonDropdownn{
+    width: 150px;
+  }
+
+ 
+ #firtsButtonFilter {
+  background-color: #ce74a6; 
+  border-radius: 7px;
+  text-align: center;
+  display: inline-block;
+  } 
+
+  #secondButtonFilter {
+    background-color: blue; 
+    border-radius: 7px;
+    text-align: center;
+    display: inline-block;
+    } 
+
+    #thirdButtonFilter {
+      background-color: #6aefaf; 
+      border-radius: 7px;
+      text-align: center;
+      display: inline-block;
+      } 
+  
+
+ .SaveButton {
+  background-color:blue; 
+  border-radius: 7px;
+  display: inline-block;
+  text-align: right;
+  margin-left: 180px;
+
+} 
+
+  
