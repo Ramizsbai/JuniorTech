@@ -8,6 +8,7 @@ import Icon2 from './linkedin.png';
 import Icon3 from './twitter.png';
 
 
+
 export class Footer extends Component {
     render() {
         return (
@@ -18,7 +19,7 @@ export class Footer extends Component {
                     <h2 id="Subscribe"> Subscribe Now ! </h2>
                     <div className="home-footer2">
                         <input className="input-footer" type="text" placeholder="Email address"></input>
-                        <Button className="button-footer d-flex ml-3 my-auto" color="success">Send</Button>
+                       <div className="button-footer"> <Button className=" d-flex ml-3 my-auto" color="success">Send</Button></div>
                     </div>
                     <div className="flex-row">
                         <ul className="footer-list">
@@ -56,7 +57,8 @@ export class Footer extends Component {
                         </div>
                     </div>
                 </div>
-
+   
+           
             </div>
         );
     }
