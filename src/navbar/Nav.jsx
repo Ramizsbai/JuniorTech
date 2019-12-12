@@ -17,14 +17,18 @@ const useStyles = makeStyles(theme => ({
     title: {
         flexGrow: 1,
     },
+    backgroundColor: {
+        background: '#4c9f70',
+    }
+
 }));
 
 export default function Nav() {
     const classes = useStyles();
 
     return (
-        <div className={classes.root}>
-            <AppBar position="static">
+        <div className={{ root: classes.root, backgroundColor: classes.backgroundColor }} >
+            <AppBar position="static" className={classes.backgroundColor}>
                 <Toolbar>
                     <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
                         <MenuIcon />

@@ -16,7 +16,7 @@ import Box from '@material-ui/core/Box';
 const useStyles = makeStyles(theme => ({
     root: {
         '& > *': {
-            margin: theme.spacing(1),
+            margin: theme.spacing(2),
             width: 250,
 
 
@@ -30,9 +30,10 @@ const useStyles = makeStyles(theme => ({
 }));
 const ColorButton = withStyles(theme => ({
     root: {
-        width: 150,
+        width: 100,
+        height: 45,
         color: "white",
-        backgroundColor: "#64e0c1",
+        backgroundColor: "#4c9f70",
         '&:hover': {
             backgroundColor: green[700],
         },
