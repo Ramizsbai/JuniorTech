@@ -3,7 +3,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
-import { green, grey } from '@material-ui/core/colors';
+import { green } from '@material-ui/core/colors';
 import { withStyles } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box';
 
