@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from './header/Header';
-import Body from './body/Body'
+import Body from './body/Body';
+import Filter from './filter/Filter';
 
 
 export class Jobs extends Component {
@@ -9,7 +10,8 @@ export class Jobs extends Component {
         return (
             <div>
                 <Header />
-                <Body />                
+                <Filter />
+                <Body />
             </div>
         )
     }
