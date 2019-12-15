@@ -1,6 +1,5 @@
 
 import React, { Component } from 'react';
-import Filter from './filterComponent/filter';
 import { Route } from 'react-router-dom';
 import './Body.css';
 import DesComponent from './bodyComponents/DesComponent/DesComponent';
