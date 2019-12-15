@@ -9,9 +9,18 @@
         height: 200px;
     }
 
-    .butt {
+    .butt-search {
         display: flex;
         justify-content: center;
+        display: none;
+    }
+    .body-two-text{
+        text-align: center;
+    }
+
+    .butt-none{
+        margin: 40px;
+       
     }
 }
 
@@ -23,8 +32,26 @@
         margin-top: 40px;
     }
 
-    .butt {
+    .butt-search {
         display: flex;
         justify-content: center;
+        display: none;
+    }
+
+        .butt-none{
+            margin: 79px;
+        }
+
+        .body-two-text{
+            text-align: center;
+        }
+    
+}
+
+
+
+@media only screen and (min-width: 1023px) {
+    .butt-none{
+        display: none;
     }
 }

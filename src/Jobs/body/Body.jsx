@@ -1,8 +1,10 @@
-import React, { Component } from 'react'
+
+import React, { Component } from 'react';
+import Filter from './filterComponent/filter'
 import { Route } from 'react-router-dom';
-import './Body.css'
-import DesComponent from './bodyComponents/DesComponent/DesComponent'
-import JobComponent from './bodyComponents/jobComponent/JobComponent'
+import './Body.css';
+import DesComponent from './bodyComponents/DesComponent/DesComponent';
+import JobComponent from './bodyComponents/jobComponent/JobComponent';
 
 
 
@@ -63,9 +65,11 @@ export class BodyComponent extends Component {
                     <Route path="/jobs/:id" render={(routeProps) => <DesComponent jobs={this.state.jobs} match={routeProps.match} />} />
 
                 </div>
+
             </div>
         )
     }
 }
 
-export default BodyComponent
+
+export default BodyComponent;
