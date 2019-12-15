@@ -3,24 +3,25 @@ import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
-import GitHubIcon from '@material-ui/icons/GitHub';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import image from './temo.jpg'
+
 
 
 
 const useStyles = makeStyles({
     card: {
         maxWidth: 245,
-        marginLeft: 900,
-        marginTop: 20,
-    },
-    media: {
-        height: 80,
+        marginLeft: 50,
     },
 });
+
+
+
+
+
+
+
+
 
 export default function MediaCard() {
     const classes = useStyles();
@@ -28,28 +29,23 @@ export default function MediaCard() {
     return (
         <Card className={classes.card}>
             <CardActionArea>
-                <CardMedia
-                    className={classes.media}
-                    image={image}
-                    title="Contemplative Reptile"
-                />
                 <CardContent>
-                    <Typography gutterBottom variant="h5" component="h2">
-                        Tamim
+                    <Typography gutterBottom variant="h5" component="h4">
+                        Our Team
                 </Typography>
                     <Typography variant="body2" color="textSecondary" component="p">
-                        Front-End Developer
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Maxime ipsa sint est ratione hic atque necessitatibus magnam autem et.
+                        Minima quasi odit omnis velit facere eligendi. Nesciunt assumenda quae omnis perferendis,
+                        accusamus sunt doloremque et magnam sequi soluta vitae. Laborum?
                 </Typography>
                 </CardContent>
+
+
             </CardActionArea>
 
-            <GitHubIcon />
-            <LinkedInIcon />
-        </Card>
 
+
+        </Card>
     );
 }
-
-
-
-
