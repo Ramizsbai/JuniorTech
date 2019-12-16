@@ -1,6 +1,5 @@
 
 import React, { Component } from 'react';
-import Filter from './filterComponent/filter'
 import { Route } from 'react-router-dom';
 import './Body.css';
 import DesComponent from './bodyComponents/DesComponent/DesComponent';
@@ -9,7 +8,7 @@ import JobComponent from './bodyComponents/jobComponent/JobComponent';
 
 
 
-export class BodyComponent extends Component {
+export class Body extends Component {
 
     state = {
         description: null,
@@ -72,4 +71,4 @@ export class BodyComponent extends Component {
 }
 
 
-export default BodyComponent;
+export default Body;
