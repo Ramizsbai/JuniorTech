@@ -41,16 +41,19 @@ const ColorButton = withStyles(theme => ({
 }))(Button);
 
 
-export default function Header() {
+export default function Header({ jobQuery, location, setJobQuery, setLocation, onSearchSubmit }) {
     const classes = useStyles();
+
 
     return (
         <Box display="flex" alignItems="center" mx="auto" justifyContent="center">
-            <form className={classes.root} noValidate autoComplete="off" my="auto" >
+            <form onSubmit={onSearchSubmit} className={classes.root} autoComplete="off">
 
                 <TextField
                     id="outlined-basic"
                     label="Keyword"
+                    value={jobQuery}
+                    onChange={(e) => setJobQuery(e.target.value)}
                     variant="outlined"
                     InputProps={{
                         startAdornment: (
@@ -63,6 +66,8 @@ export default function Header() {
                 <TextField
                     id="outlined-basic"
                     label="Location"
+                    onChange={(e) => setLocation(e.target.value)}
+                    value={location}
                     variant="outlined"
                     InputProps={{
                         startAdornment: (
@@ -73,12 +78,11 @@ export default function Header() {
                     }}
                 />
 
-            </form>
-            <div >
-                <ColorButton variant="contained" color="primary" className={classes.margin}>
+                <ColorButton type="submit" variant="contained" color="primary" className={classes.margin}>
                     Search
                 </ColorButton>
-            </div>
-        </Box>
+
+            </form>
+        </Box >
     );
 }
