@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import { makeStyles } from '@material-ui/core/styles';
-import {Grid, Container, Typography} from '@material-ui/core/';
+import {Container, Typography} from '@material-ui/core/';
 import './intro.css'
+import './responisve-intro.css'
 
 
 const useStyles = makeStyles(theme => ({
@@ -11,11 +12,10 @@ const useStyles = makeStyles(theme => ({
       fontFamily: 'Oswald, sans-serif'
      },
      para:{
-         letterSpacing: '1px'
+         letterSpacing: '1px',
+         fontWeight: 'bold'
          },
-    mainIntro:{
-        marginTop: '200px'
-    }  
+    
      
    }));
 
@@ -25,9 +25,15 @@ const IntroAbout = () =>{
 
 
     return(
-        <div className=  {classes.mainIntro}>
-            <Grid item xs={6} >
-            <Container  maxWidth="sm" style={{border: '1px solid black', paddingLeft: '0px'}}>
+
+        
+
+
+
+
+        <div className= 'mainIntro'>
+            
+            <Container  maxWidth="lg" style={{border: '1px solid black', paddingLeft: '0px'}}>
         <Typography className={classes.root}  variant="h3" component="h3">
         Our Team.
       </Typography>
@@ -41,7 +47,7 @@ const IntroAbout = () =>{
         Paper can be used to build surface or other elements for your.
       </Typography>
             </Container>
-            </Grid>
+       
         </div>
     )
 }
