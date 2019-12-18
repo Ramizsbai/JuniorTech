@@ -7,12 +7,13 @@ class JobComponent extends Component {
 
   render() {
     let jobs = this.props.jobs
+
     return (
       <div>
         {
           jobs.map((job) => (
 
-            <JobSubComponent id={job.id} title={job.title} key={job.id} company={job.employer.name} city={job.locations.data.city} />
+            <JobSubComponent id={job.id} title={job.title} key={job.id} company={job.company.display_name} city={job.location.display_name} />
 
           ))
         }

@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react';
 import './footer.css';
 import './responsive-home-footer.css';
@@ -61,7 +62,29 @@ export class Footer extends Component {
            
             </div>
         );
-    }
-}
 
-export default Footer;
+    }
+
+}));
+
+export default function Footer() {
+    const classes = useStyles();
+
+    return (
+        <div className={{ root: classes.root, backgroundColor: classes.backgroundColor }} >
+            <Router>
+                <AppBar position="static" className={classes.backgroundColor}>
+                    <Toolbar>
+                        <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+                            <MenuIcon />
+                        </IconButton>
+                        <Typography variant="h6" className={classes.title}>
+                            News
+          </Typography>
+                        <Button color="inherit"></Button>
+                    </Toolbar>
+                </AppBar>
+            </Router>
+        </div>
+    );
+}
