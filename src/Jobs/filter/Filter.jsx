@@ -4,8 +4,6 @@ import TextField from '@material-ui/core/TextField';
 import Fab from '@material-ui/core/Fab';
 import AddIcon from '@material-ui/icons/Add';
 import './filter.css';
-import Chip from '@material-ui/core/Chip';
-
 
 
 const useStyles = makeStyles(theme => ({
@@ -23,15 +21,26 @@ const useStyles = makeStyles(theme => ({
 
 export default function Filter() {
     const classes = useStyles();
-    const [chipData, setChipData] = useState([
-        { key: 0, label: '' },
-        { key: 1, label: '' },
-        { key: 2, label: '' },
-    ]);
+    const [chipData, setChipData] = useState(
+        {
+            value: "",
+            skill: [null,]
+        }
 
-    const handleDelete = chipToDelete => () => {
-        setChipData(chips => chips.filter(chip => chip.key !== chipToDelete.key));
-    };
+    );
+
+
+
+
+    const handleChange = e => {
+        setChipData({ value: e.target.value })
+        console.log(chipData)
+    }
+
+    const handleClick = () => {
+
+
+    }
     return (
         <div>
             <form
@@ -45,18 +54,16 @@ export default function Filter() {
                         id="outlined-size-small"
                         variant="outlined"
                         size="small"
-
-
+                        value={chipData.value}
+                        onChange={handleChange}
                     />
-                    <Fab size="small" color="primary" aria-label="add" my="auto">
+                    <Fab size="small" color="primary" aria-label="add" my="auto" onClick={handleClick}>
                         <AddIcon />
                     </Fab>
-                    <div>
-
-                    </div>
                 </div>
             </form>
-
+            <div>
+            </div>
         </div>
 
     );

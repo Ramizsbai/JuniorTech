@@ -9,7 +9,6 @@ export default function Body() {
         <div>
             <Card />
             <Info />
-            <Card />
 
         </div>
 

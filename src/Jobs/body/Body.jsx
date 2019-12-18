@@ -8,7 +8,7 @@ import JobComponent from './bodyComponents/jobComponent/JobComponent';
 
 
 
-export class BodyComponent extends Component {
+export class Body extends Component {
 
     state = {
         description: null,
@@ -71,4 +71,4 @@ export class BodyComponent extends Component {
 }
 
 
-export default BodyComponent;
+export default Body;
