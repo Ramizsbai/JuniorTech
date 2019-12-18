@@ -31,7 +31,7 @@ const Jobs = () => {
 
                 setLoading(false)
                 setData(data)
-                console.log(data)
+
             })
             .catch((e) => {
                 setLoading(false)
@@ -62,7 +62,7 @@ const Jobs = () => {
                 setJobQuery={setJobQuery}
             />
             <Filter />
-            <Body data={data.results} loading={loading} />
+            <Body data={data.results} loading={loading} error={error} />
         </div>
     )
 }

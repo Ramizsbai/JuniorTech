@@ -12,8 +12,8 @@ import FavoriteIcon from '@material-ui/icons/Favorite';
 const jobTypes = [
     {
 
-        label: 'All Types',
-        value: 'All Types',
+        label: 'Job Type',
+        value: 'Job Type',
     },
     {
 

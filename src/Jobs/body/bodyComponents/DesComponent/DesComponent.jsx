@@ -21,9 +21,9 @@ class DesComponent extends Component {
         'Access-Control-Allow-Methods': 'GET',
     }
 
-    fetchUserData = (id) => {
+    fetchJobData = (id) => {
         this.setState({ loading: true })
-        const job = 'java';
+        const job = 'javascript';
         const city = 'berlin';
         const APP_ID1 = 'c7212bc0';
         const API_KEY1 = '3ae54560f5840fd67f71ae9bd4f53330';
@@ -32,9 +32,9 @@ class DesComponent extends Component {
 
             .then(response => response.json())
             .then(data => {
-
-                this.setState({ user: data, loading: false })
-
+                const jobData = data.results.find(x => x.id === id)
+                this.setState({ jobs: jobData, loading: false })
+                console.log(this.state.jobs)
 
             })
             .catch((e) => {
@@ -45,7 +45,9 @@ class DesComponent extends Component {
 
 
     componentDidMount() {
-        this.fetchUserData(this.props.match.params.id)
+        this.fetchJobData(this.props.match.params.id)
+        console.log(this.props.match.params.id)
+
     }
 
     UNSAFE_componentWillReceiveProps(nextProps) {
@@ -54,7 +56,7 @@ class DesComponent extends Component {
         const currentId = this.props.match.params.id
 
         if (nextId !== currentId) {
-            this.fetchUserData(nextId)
+            this.fetchJobData(nextId)
         }
     }
 
@@ -83,7 +85,7 @@ class DesComponent extends Component {
                                 <div className='location'><p>{jobDes.city}</p></div>
                             </div>
 
-                            <div>{jobDes.id}</div>
+
 
                         </div>
                         <div className='mt-4'><Button variant="outlined" color="primary">Apply</Button></div>

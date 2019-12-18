@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import IntroAbout from './bodyComponents/introduction/Intro';
 import Profiles from './bodyComponents/profiles/Profiles';
 import './body.css'
@@ -9,16 +9,16 @@ import './responsive-body.about.css'
 
 
 
-const Body = () =>{
+const Body = () => {
 
-  
 
-    return(
-        <div className= 'bodyAbout'  >
+
+    return (
+        <div className='bodyAbout'  >
 
             <IntroAbout />
             <Profiles />
-     
+
         </div>
     )
 }
