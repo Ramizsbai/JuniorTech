@@ -1,0 +1,28 @@
+.mainProfile{
+    border: 1px solid yellow;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 700px;
+    width: 50%;
+    margin: 45px
+}
+
+.row1{
+    display: flex;
+    justify-content: space-between;
+  
+
+}
+
+.row2{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+}
+
+
+.row3 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
