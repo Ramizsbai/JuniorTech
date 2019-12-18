@@ -1,12 +1,13 @@
+
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { MemoryRouter as Router } from 'react-router';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
+import { Typography } from '@material-ui/core';
 
 
 
@@ -15,36 +16,34 @@ const useStyles = makeStyles(theme => ({
     root: {
         flexGrow: 1,
     },
-    menuButton: {
-        marginRight: theme.spacing(2),
-    },
-    title: {
-        flexGrow: 1,
-    },
     backgroundColor: {
         background: '#4c9f70',
-    }
+    },
+    icons: {
+        marginLeft: 300,
 
+    }
 }));
+
 
 export default function Footer() {
     const classes = useStyles();
 
     return (
-        <div className={{ root: classes.root, backgroundColor: classes.backgroundColor }} >
-            <Router>
-                <AppBar position="static" className={classes.backgroundColor}>
-                    <Toolbar>
-                        <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-                            <MenuIcon />
-                        </IconButton>
-                        <Typography variant="h6" className={classes.title}>
-                            News
-          </Typography>
-                        <Button color="inherit"></Button>
-                    </Toolbar>
-                </AppBar>
-            </Router>
+        <div className={{ root: classes.root, backgroundColor: classes.backgroundColor, icons: classes.icons }} >
+
+            <AppBar position="static" className={classes.backgroundColor}>
+                <Toolbar>
+                    <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+                        <Typography>
+                            <FacebookIcon className={classes.icons} />
+                            <InstagramIcon className={classes.icons} />
+                            <LinkedInIcon className={classes.icons} />
+                        </Typography>
+                    </IconButton>
+                </Toolbar>
+            </AppBar>
+
         </div>
     );
 }

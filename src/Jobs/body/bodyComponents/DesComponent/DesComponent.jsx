@@ -25,7 +25,7 @@ class DesComponent extends Component {
         const city = 'berlin';
         const APP_ID1 = 'c7212bc0';
         const API_KEY1 = '3ae54560f5840fd67f71ae9bd4f53330';
-        const url = `https://cors-anywhere.herokuapp.com/http://api.adzuna.com:80/v1/api/jobs/de/search/1?app_id=${APP_ID1}&app_key=${API_KEY1}&results_per_page=20&what=${job}&where=${city}&content-type=application/json`
+        const url = `https://cors-anywhere.herokuapp.com/http://api.adzuna.com:80/v1/api/jobs/de/search/1?app_id=${APP_ID1}&app_key=${API_KEY1}&results_per_page=20&what=${job}&where=${city}&content-type=application/json`;
         fetch(url)
 
             .then(response => response.json())
@@ -97,4 +97,4 @@ class DesComponent extends Component {
 }
 
 
-export default DesComponent
+export default DesComponent;

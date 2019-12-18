@@ -1,12 +1,30 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import Fab from '@material-ui/core/Fab';
 import AddIcon from '@material-ui/icons/Add';
 import './filter.css';
 import ChipsArray from './skillsComponent/Skills';
+import MenuItem from '@material-ui/core/MenuItem';
 
+const jobTypes = [
+    {
 
+        label: 'Full Time',
+        key: 1,
+    },
+    {
+
+        label: 'Part Time',
+        key: 2,
+    },
+    {
+
+        label: 'Internship',
+        key: 3,
+    },
+
+];
 const useStyles = makeStyles(theme => ({
     root: {
         '& .MuiTextField-root': {
@@ -25,6 +43,7 @@ export default function Filter() {
 
     const [chipsList, setChipsList] = useState([]);
     const [inputValue, setInputValue] = useState(``);
+    const [jobType, setJobType] = React.useState('Job Type');
 
 
 
@@ -67,7 +86,7 @@ export default function Filter() {
     }
 
     return (
-        <div>
+        <div className="filter">
             <form
                 onSubmit={onFormSubmit}
                 className={classes.root}
@@ -88,9 +107,25 @@ export default function Filter() {
                     </Fab>
                     <ChipsArray onChipDelete={handleChipDelete} chipsList={chipsList} />
                 </div>
+
             </form>
-            <div>
-            </div>
+
+            <TextField
+                id="outlined-select-currency"
+                select
+                label="Job Type"
+                value={jobType}
+                onChange={handleChange}
+                helperText="Please select your currency"
+                variant="outlined"
+            >
+                {jobTypes.map(option => (
+                    <MenuItem key={option.key}>
+                        {option.label}
+                    </MenuItem>
+                ))}
+            </TextField>
+
         </div>
 
     );
