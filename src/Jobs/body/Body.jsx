@@ -1,6 +1,8 @@
 
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
+import CircularProgress from '@material-ui/core/CircularProgress';
+
 import './Body.css';
 import DesComponent from './bodyComponents/DesComponent/DesComponent';
 import JobComponent from './bodyComponents/jobComponent/JobComponent';
@@ -15,7 +17,7 @@ export class Body extends Component {
     render() {
 
         if (this.props.loading) {
-            return <div>Loading...</div>
+            return <div><CircularProgress /></div>
         }
 
         return (

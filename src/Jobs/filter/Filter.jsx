@@ -6,22 +6,29 @@ import AddIcon from '@material-ui/icons/Add';
 import './filter.css';
 import ChipsArray from './skillsComponent/Skills';
 import MenuItem from '@material-ui/core/MenuItem';
+import FavoriteIcon from '@material-ui/icons/Favorite';
+
 
 const jobTypes = [
     {
 
+        label: 'All Types',
+        value: 'All Types',
+    },
+    {
+
         label: 'Full Time',
-        key: 1,
+        value: 'Full Time',
     },
     {
 
         label: 'Part Time',
-        key: 2,
+        value: 'Part Time',
     },
     {
 
         label: 'Internship',
-        key: 3,
+        value: 'Internship',
     },
 
 ];
@@ -34,6 +41,13 @@ const useStyles = makeStyles(theme => ({
         },
         chip: {
             margin: theme.spacing(0.5),
+        },
+    },
+    jobType: {
+        '& .MuiTextField-root': {
+            margin: theme.spacing(1),
+            width: 200,
+
         },
     },
 }));
@@ -85,46 +99,78 @@ export default function Filter() {
         updateChipList()
     }
 
+    const handletypeChange = event => {
+        setJobType(event.target.value);
+    };
     return (
-        <div className="filter">
-            <form
-                onSubmit={onFormSubmit}
-                className={classes.root}
-                noValidate autoComplete="off"
-            >
+        <div className="filter-section">
+            <div className="skill-section">
+                <form
+                    onSubmit={onFormSubmit}
+                    className={classes.root}
+                    noValidate autoComplete="off"
+                >
 
-                <div className="filter-section">
+                    <div className="skills-section">
+                        <TextField
+                            label="Skills"
+                            id="outlined-size-small"
+                            variant="outlined"
+                            size="small"
+                            value={inputValue}
+                            onChange={handleChange}
+                        />
+                        <Fab color="primary" size="small" aria-label="add" my="auto" onClick={handleClick}>
+                            <AddIcon />
+                        </Fab>
+                        <ChipsArray onChipDelete={handleChipDelete} chipsList={chipsList} />
+                    </div>
+
+                </form>
+            </div>
+
+            <div className="jobType-section">
+                <form className={classes.jobType} noValidate autoComplete="off">
+
                     <TextField
-                        label="Skills"
-                        id="outlined-size-small"
-                        variant="outlined"
+                        id="outlined-select-currency"
+                        select
+                        label="Job Type"
+                        my="auto"
+                        value={jobType}
+                        onChange={handletypeChange}
                         size="small"
-                        value={inputValue}
-                        onChange={handleChange}
-                    />
-                    <Fab size="small" color="primary" aria-label="add" my="auto" onClick={handleClick}>
-                        <AddIcon />
+                        variant="outlined"
+                    >
+                        {jobTypes.map(option => (
+                            <MenuItem key={option.value} value={option.value}>
+                                {option.label}
+                            </MenuItem>
+                        ))}
+                    </TextField>
+                    <TextField
+                        id="outlined-select-currency"
+                        select
+                        my="auto"
+                        label="Job Type"
+                        value={jobType}
+                        onChange={handletypeChange}
+                        size="small"
+                        variant="outlined"
+                    >
+                        {jobTypes.map(option => (
+                            <MenuItem key={option.value} value={option.value}>
+                                {option.label}
+                            </MenuItem>
+                        ))}
+                    </TextField>
+                    <Fab color="secondary" aria-label="like" size="small" my="auto">
+                        <FavoriteIcon />
                     </Fab>
-                    <ChipsArray onChipDelete={handleChipDelete} chipsList={chipsList} />
-                </div>
+                </form>
 
-            </form>
+            </div>
 
-            <TextField
-                id="outlined-select-currency"
-                select
-                label="Job Type"
-                value={jobType}
-                onChange={handleChange}
-                helperText="Please select your currency"
-                variant="outlined"
-            >
-                {jobTypes.map(option => (
-                    <MenuItem key={option.key}>
-                        {option.label}
-                    </MenuItem>
-                ))}
-            </TextField>
 
         </div>
 

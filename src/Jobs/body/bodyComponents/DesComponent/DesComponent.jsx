@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import './Des.css'
 import Logo from './icon/logo.png';
-import { Button, Spinner } from 'reactstrap'
+import Button from '@material-ui/core/Button';
+import CircularProgress from '@material-ui/core/CircularProgress';
 import './DesSub.css';
+
 
 class DesComponent extends Component {
     constructor(props) {
@@ -59,7 +61,7 @@ class DesComponent extends Component {
 
     render() {
         if (this.state.loading) {
-            return <div style={{ display: 'flex', width: '100%', height: '50vh', justifyContent: 'center', alignItems: 'center' }}><Spinner /></div>
+            return <div style={{ display: 'flex', width: '100%', height: '50vh', justifyContent: 'center', alignItems: 'center' }}><CircularProgress /></div>
         }
 
         if (this.state.error) {
@@ -84,7 +86,7 @@ class DesComponent extends Component {
                             <div>{jobDes.id}</div>
 
                         </div>
-                        <div className='applyButton mt-4'><Button>Apply</Button></div>
+                        <div className='mt-4'><Button variant="outlined" color="primary">Apply</Button></div>
                     </div>
 
 
