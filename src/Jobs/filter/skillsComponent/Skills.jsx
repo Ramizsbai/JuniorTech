@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeStyles, chipData } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import Chip from '@material-ui/core/Chip';
 import Paper from '@material-ui/core/Paper';
 
@@ -15,19 +15,17 @@ const useStyles = makeStyles(theme => ({
     },
 }));
 
-export default function ChipsArray() {
+export default function ChipsArray({ chipsList, onChipDelete }) {
     const classes = useStyles();
-
-
     return (
         <Paper className={classes.root}>
-            {chipData.map(data => {
+            {chipsList.map(chip => {
 
                 return (
                     <Chip
-                        key={data.key}
-
-                        label={data.label}
+                        onDelete={() => onChipDelete(chip)}
+                        key={chip}
+                        label={chip}
                         className={classes.chip}
                     />
                 );

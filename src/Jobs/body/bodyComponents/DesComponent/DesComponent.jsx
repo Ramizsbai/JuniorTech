@@ -30,7 +30,7 @@ class DesComponent extends Component {
 
             .then(response => response.json())
             .then(data => {
-                console.log(data)
+
                 this.setState({ user: data, loading: false })
 
 
@@ -67,7 +67,6 @@ class DesComponent extends Component {
         }
 
         const jobDes = this.state.jobs;
-        console.log(this.state.jobs + "this one")
 
         return (
             <div className='mainDes'>
