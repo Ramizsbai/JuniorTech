@@ -15,19 +15,17 @@ const useStyles = makeStyles(theme => ({
     },
 }));
 
-export default function ChipsArray() {
+export default function ChipsArray({ chipsList, onChipDelete }) {
     const classes = useStyles();
-
-
     return (
         <Paper className={classes.root}>
-            {chipData.map(data => {
+            {chipsList.map(chip => {
 
                 return (
                     <Chip
-                        key={data.key}
-
-                        label={data.label}
+                        onDelete={() => onChipDelete(chip)}
+                        key={chip}
+                        label={chip}
                         className={classes.chip}
                     />
                 );

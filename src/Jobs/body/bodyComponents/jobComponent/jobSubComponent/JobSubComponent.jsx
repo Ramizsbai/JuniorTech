@@ -17,7 +17,7 @@ const JobSubComponent = (props) => {
                     </div>
                     <div className="job-post">
                         <div className="job-post-left d-flex flex-column ml-4">
-                            <span className="job-post-title">{props.title}</span>
+                            <span dangerouslySetInnerHTML={{ __html: props.title }} className="job-post-title"></span>
                             <span className="job-post-company">{props.company}</span>
                             <span className="job-post-location">{props.city}</span>
                         </div>
