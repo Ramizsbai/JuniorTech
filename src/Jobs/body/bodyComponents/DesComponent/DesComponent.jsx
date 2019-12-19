@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Des.css'
-import Link from '@material-ui/core/Link';
 import Button from '@material-ui/core/Button';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import keys from '../../../../config';
@@ -119,4 +118,4 @@ class DesComponent extends Component {
 }
 
 
-export default DesComponent
+export default DesComponent;
