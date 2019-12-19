@@ -5,16 +5,21 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import image from './me-final-1.png'
+import hamada from './hamadaa.png';
+import ramez from './ramez.png';
+import alisio from './alisio.png';
+import tamim from './tamim.png';
+import yasser from './yasser.png';
 import './profiles.css'
-import './responsive-profiles-about.css'
+
+
 
 
 const useStyles = makeStyles(theme => ({
   card: {
     display: 'flex',
-    width: '400px',
-    height: '200px'
+    width: '300px',
+    height: '140px'
 
 
   },
@@ -23,7 +28,10 @@ const useStyles = makeStyles(theme => ({
     textAlign: 'center',
     flexDirection: 'column',
     width: '50%',
-    backgroundColor: '#EDFBFC'
+    backgroundColor: '#4c9f70',
+    color: "white",
+    fontWeight: "Bold",
+
   },
   content: {
     flex: '1 0 auto',
@@ -38,7 +46,11 @@ const useStyles = makeStyles(theme => ({
     justifyContent: 'space-around',
     alignItems: 'center',
     padding: theme.spacing(1),
-    paddingBottom: theme.spacing(2),
+    marginBottom: theme.spacing(3),
+  },
+  large: {
+    width: theme.spacing(7),
+    height: theme.spacing(7),
   },
 
 }));
@@ -60,9 +72,9 @@ const Profiles = () => {
 
           <div className={classes.details}>
             <CardContent className={classes.content}>
-              <Typography component="h5" variant="h5">
-                John Smith
-          </Typography>
+              <Typography>
+                <span className="team"> Ramez Alsbai</span>
+              </Typography>
               <Typography variant="subtitle1" color="textSecondary">
                 Mac Miller
           </Typography>
@@ -78,7 +90,7 @@ const Profiles = () => {
 
           <CardMedia
             className={classes.cover}
-            image={image}
+            image={ramez}
             title="me"
           />
         </Card>
@@ -90,9 +102,9 @@ const Profiles = () => {
         <Card className={classes.card}>
           <div className={classes.details}>
             <CardContent className={classes.content}>
-              <Typography component="h5" variant="h5">
-                John Smith
-          </Typography>
+              <Typography>
+                <span className="team"> Ahmad Ghanem</span>
+              </Typography>
               <Typography variant="subtitle1" color="textSecondary">
                 Mac Miller
           </Typography>
@@ -108,7 +120,7 @@ const Profiles = () => {
 
           <CardMedia
             className={classes.cover}
-            image={image}
+            image={hamada}
             title="me"
           />
         </Card>
@@ -120,9 +132,9 @@ const Profiles = () => {
         <Card className={classes.card}>
           <div className={classes.details}>
             <CardContent className={classes.content}>
-              <Typography component="h5" variant="h5">
-                John Smith
-          </Typography>
+              <Typography>
+                <span className="team">Tamim Abo Tafesh</span>
+              </Typography>
               <Typography variant="subtitle1" color="textSecondary">
                 Mac Miller
           </Typography>
@@ -138,7 +150,7 @@ const Profiles = () => {
 
           <CardMedia
             className={classes.cover}
-            image={image}
+            image={tamim}
             title="me"
           />
         </Card>
@@ -156,9 +168,9 @@ const Profiles = () => {
         <Card className={classes.card}>
           <div className={classes.details}>
             <CardContent className={classes.content}>
-              <Typography component="h5" variant="h5">
-                John Smith
-          </Typography>
+              <Typography>
+                <span className="team">Yaser Alrifai</span>
+              </Typography>
               <Typography variant="subtitle1" color="textSecondary">
                 Mac Miller
           </Typography>
@@ -174,7 +186,7 @@ const Profiles = () => {
 
           <CardMedia
             className={classes.cover}
-            image={image}
+            image={yasser}
             title="me"
           />
         </Card>
@@ -183,9 +195,9 @@ const Profiles = () => {
         <Card className={classes.card}>
           <div className={classes.details}>
             <CardContent className={classes.content}>
-              <Typography component="h5" variant="h5">
-                John Smith
-          </Typography>
+              <Typography>
+                <span className="team">Alisio Delgado</span>
+              </Typography>
               <Typography variant="subtitle1" color="textSecondary">
                 Mac Miller
           </Typography>
@@ -201,7 +213,7 @@ const Profiles = () => {
 
           <CardMedia
             className={classes.cover}
-            image={image}
+            image={alisio}
             title="me"
           />
         </Card>

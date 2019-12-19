@@ -1,20 +1,19 @@
-.mainProfile{
-    border: 1px solid yellow;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 700px;
+.mainProfile {
+
+    height: 300px;
     width: 50%;
-    margin: 45px
+    margin: 45px;
+    margin-left: 500px;
 }
 
-.row1{
+.row1 {
     display: flex;
     justify-content: space-between;
-  
+
 
 }
 
-.row2{
+.row2 {
     display: flex;
     justify-content: flex-end;
     margin-top: 40px;
@@ -25,4 +24,10 @@
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
+}
+
+.team {
+    font-weight: bold;
+    font-size: 19px;
+    font-family: Roboto;
 }

@@ -166,7 +166,7 @@ export default function Filter() {
                             value={inputValue}
                             onChange={handleChange}
                         />
-                        <Fab className={classes.button} size="small" aria-label="add" my="auto" onClick={handleClick}>
+                        <Fab color="primary" size="small" aria-label="add" my="auto" onClick={handleClick}>
                             <AddIcon />
                         </Fab>
                         <ChipsArray onChipDelete={handleChipDelete} chipsList={chipsList} />
