@@ -3,8 +3,11 @@ import './Des.css'
 import Logo from './icon/logo.png';
 import Button from '@material-ui/core/Button';
 import CircularProgress from '@material-ui/core/CircularProgress';
-import './DesSub.css';
+import keys from '../../../../config';
+// import API_KEY from '../../../apiKey'
+// import URL from '../../../apiKey'
 
+const { APP_ID, API_KEY, URL } = keys;
 
 class DesComponent extends Component {
     constructor(props) {
@@ -29,9 +32,9 @@ class DesComponent extends Component {
         this.setState({ loading: true, })
         const job = this.state.jobQuery;
         const city = this.state.location;
-        const APP_ID1 = 'c7212bc0';
-        const API_KEY1 = '3ae54560f5840fd67f71ae9bd4f53330';
-        const url = `https://cors-anywhere.herokuapp.com/http://api.adzuna.com:80/v1/api/jobs/de/search/1?app_id=${APP_ID1}&app_key=${API_KEY1}&results_per_page=20&what=${job}&where=${city}&content-type=application/json`
+        const APP_ID1 = APP_ID;
+        const API_KEY1 = API_KEY;
+        const url = URL + `1?app_id=${APP_ID1}&app_key=${API_KEY1}&results_per_page=20&what=${job}&where=${city}&content-type=application/json`;
         fetch(url)
 
             .then(response => response.json())
