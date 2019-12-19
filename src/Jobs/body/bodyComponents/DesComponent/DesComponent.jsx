@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import './Des.css'
-import Logo from './icon/logo.png';
+import Link from '@material-ui/core/Link';
 import Button from '@material-ui/core/Button';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import keys from '../../../../config';
-// import API_KEY from '../../../apiKey'
-// import URL from '../../../apiKey'
+import ApartmentOutlinedIcon from '@material-ui/icons/ApartmentOutlined';
 
 const { APP_ID, API_KEY, URL } = keys;
 
@@ -72,7 +71,7 @@ class DesComponent extends Component {
 
     render() {
         if (this.state.loading) {
-            return <div style={{ display: 'flex', width: '100%', height: '50vh', justifyContent: 'center', alignItems: 'center' }}><CircularProgress /></div>
+            return <div style={{ display: 'flex', width: '60%', height: '60vh', justifyContent: 'center', alignItems: 'center' }}><CircularProgress /></div>
         }
 
         if (this.state.error) {
@@ -80,33 +79,35 @@ class DesComponent extends Component {
         }
 
         const jobDes = this.state.jobs;
-        console.log(jobDes);
+        console.log(jobDes.redirect_url);
         if (jobDes === undefined) {
             return <div>nothing</div>
         }
         else {
             return (
-                <div className='mainDes'>
+                <div className='mainDes mt-4'>
                     <div className='MainSub'>
 
-                        <div className='SubHeader container-fluid d-flex'>
+                        <div className='SubHeader container-fluid d-flex mt-5'>
 
-                            <div className='container d-flex mt-3'>
-                                <div className='logo'><img src={Logo} alt="" /></div>
-                                <div className='companyName mt-3 ml-3'>
-                                    <h5 dangerouslySetInnerHTML={{ __html: jobDes.title }}></h5>
-                                    <div className='location'><p>{jobDes.location.display_name}</p></div>
+                            <div className='container d-flex mt-3 ml-3'>
+                                <div className='logo'><ApartmentOutlinedIcon style={{ fontSize: 108 }} color="primary" /></div>
+                                <div className='companyName'>
+                                    <h5 className="job-des-title" dangerouslySetInnerHTML={{ __html: jobDes.title }}></h5>
+                                    <span className='company-name'>{jobDes.company.display_name}</span><br></br>
+                                    <span className='location'>{jobDes.location.display_name}</span>
                                 </div>
 
 
 
                             </div>
-                            <div className='mt-4'><Button variant="outlined" color="primary">Apply</Button></div>
+                            <div className='apply-button'><Button href={jobDes.redirect_url} target="_blank" variant="outlined" color="primary">Go to Job</Button></div>
                         </div>
 
-                        <div className="job-description container" dangerouslySetInnerHTML={{ __html: jobDes.description }}>
 
-                        </div>
+
+                    </div>
+                    <div className="job-description" dangerouslySetInnerHTML={{ __html: jobDes.description }}>
 
                     </div>
                 </div>

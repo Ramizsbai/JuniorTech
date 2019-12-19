@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-
+import './nav.css';
 import { Link as RouterLink } from 'react-router-dom';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -14,15 +14,18 @@ import MenuIcon from '@material-ui/icons/Menu';
 const useStyles = makeStyles(theme => ({
     root: {
         flexGrow: 1,
+
     },
     menuButton: {
         marginRight: theme.spacing(2),
     },
     title: {
         flexGrow: 1,
+
     },
     backgroundColor: {
         background: '#4c9f70',
+
     }
 
 }));
@@ -40,10 +43,10 @@ export default function Nav() {
                         <MenuIcon />
                     </IconButton>
                     <Typography variant="h6" className={classes.title}>
-                        <RouterLink to="/"> <Button color="inherit">Home</Button></RouterLink>
+                        <RouterLink to="/"> <Button color="inherit"><span className="navLink">Home</span></Button></RouterLink>
                     </Typography>
-                    <RouterLink to="/jobs"> <Button color="inherit">Jobs</Button></RouterLink>
-                    <RouterLink to="/about"> <Button color="inherit">About</Button></RouterLink>
+                    <RouterLink to="/jobs"> <Button color="inherit"><span className="navLink">Jobs</span></Button></RouterLink>
+                    <RouterLink to="/about"> <Button color="inherit"><span className="navLink">About</span></Button></RouterLink>
 
                 </Toolbar>
             </AppBar>

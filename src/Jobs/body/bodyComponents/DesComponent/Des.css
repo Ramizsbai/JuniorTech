@@ -1,9 +1,18 @@
 .mainDes {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	height: 478px;
 	width: 60%;
 	overflow-y: scroll;
+
+
+}
+
+.main-sub {
+	width: 100%;
+	overflow: hidden;
+
 }
 
 .mainDes::-webkit-scrollbar-track {
@@ -25,4 +34,34 @@
 
 .job-description {
 	font-size: 25px;
+	width: 500px;
+	margin-top: 50px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.logo {
+	width: 120px;
+	font-size: 80px;
+}
+
+.job-des-title {
+	font-size: 19px;
+	font-weight: bolder;
+	margin-top: 20px;
+}
+
+.apply-button {
+	width: 200px;
+	height: 70px;
+	position: relative;
+	top: 60px;
+}
+
+.companyName {
+	height: 70px;
+}
+
+.location {
+	font-weight: bold;
 }

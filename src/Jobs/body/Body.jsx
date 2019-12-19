@@ -18,7 +18,7 @@ export class Body extends Component {
         if (this.props.loading) {
             console.log(this.props.jobQuery)
             console.log(this.props.location)
-            return <div><CircularProgress /></div>
+            return <div className="spinner"><CircularProgress /></div>
         }
 
         return (
