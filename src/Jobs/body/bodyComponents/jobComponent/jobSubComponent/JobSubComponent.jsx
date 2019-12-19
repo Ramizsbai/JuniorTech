@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 import './jobSubComponent.css';
 import logo from './icons/logo.png';
 

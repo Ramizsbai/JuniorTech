@@ -1,7 +1,5 @@
-
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import './footer.css';
 import { Link as RouterLink } from 'react-router-dom';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -16,13 +14,18 @@ const useStyles = makeStyles(theme => ({
         flexGrow: 1,
 
     },
+    menuButton: {
+        marginRight: theme.spacing(2),
+    },
+    title: {
+        flexGrow: 1,
+    },
     backgroundColor: {
         background: '#4c9f70',
         height: 40,
         position: "fixed",
         bottom: 0,
     }
-
 
 }));
 

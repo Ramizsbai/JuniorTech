@@ -1,8 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Chip from '@material-ui/core/Chip';
-import Paper from '@material-ui/core/Paper';
-
+import Box from '@material-ui/core/Box';
 const useStyles = makeStyles(theme => ({
     root: {
         display: 'flex',
@@ -18,7 +17,7 @@ const useStyles = makeStyles(theme => ({
 export default function ChipsArray({ chipsList, onChipDelete }) {
     const classes = useStyles();
     return (
-        <Paper className={classes.root}>
+        <Box className={classes.root}>
             {chipsList.map(chip => {
 
                 return (
@@ -30,6 +29,6 @@ export default function ChipsArray({ chipsList, onChipDelete }) {
                     />
                 );
             })}
-        </Paper>
+        </Box>
     );
 }

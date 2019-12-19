@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import './Des.css'
-import Logo from './icon/logo.png';
-import { Button, Spinner } from 'reactstrap'
-import './DesSub.css';
+import Button from '@material-ui/core/Button';
+import CircularProgress from '@material-ui/core/CircularProgress';
+import keys from '../../../../config';
+import ApartmentOutlinedIcon from '@material-ui/icons/ApartmentOutlined';
+
+const { APP_ID, API_KEY, URL } = keys;
 
 class DesComponent extends Component {
     constructor(props) {
@@ -11,6 +14,9 @@ class DesComponent extends Component {
             loading: true,
             jobs: [],
             error: null,
+            jobQuery: this.props.jobQuery,
+            location: this.props.location,
+
         }
     }
     headers = {
@@ -19,20 +25,22 @@ class DesComponent extends Component {
         'Access-Control-Allow-Methods': 'GET',
     }
 
-    fetchUserData = (id) => {
-        this.setState({ loading: true })
-        const job = 'java';
-        const city = 'berlin';
-        const APP_ID1 = 'c7212bc0';
-        const API_KEY1 = '3ae54560f5840fd67f71ae9bd4f53330';
-        const url = `https://cors-anywhere.herokuapp.com/http://api.adzuna.com:80/v1/api/jobs/de/search/1?app_id=${APP_ID1}&app_key=${API_KEY1}&results_per_page=20&what=${job}&where=${city}&content-type=application/json`;
+
+    fetchJobData = (id) => {
+        this.setState({ loading: true, })
+        const job = this.state.jobQuery;
+        const city = this.state.location;
+        const APP_ID1 = APP_ID;
+        const API_KEY1 = API_KEY;
+        const url = URL + `1?app_id=${APP_ID1}&app_key=${API_KEY1}&results_per_page=20&what=${job}&where=${city}&content-type=application/json`;
         fetch(url)
 
             .then(response => response.json())
             .then(data => {
-
-                this.setState({ user: data, loading: false })
-
+                console.log(data)
+                const jobData = data.results.find(x => x.id === id)
+                this.setState({ jobs: jobData, loading: false })
+                console.log(this.state.jobs)
 
             })
             .catch((e) => {
@@ -42,8 +50,11 @@ class DesComponent extends Component {
     }
 
 
-    componentDidMount() {
-        this.fetchUserData(this.props.match.params.id)
+    componentWillMount() {
+        this.setState({ jobQuery: this.props.jobQuery, location: this.props.location, })
+        this.fetchJobData(this.props.match.params.id)
+        console.log(this.props.match.params.id)
+
     }
 
     UNSAFE_componentWillReceiveProps(nextProps) {
@@ -52,14 +63,14 @@ class DesComponent extends Component {
         const currentId = this.props.match.params.id
 
         if (nextId !== currentId) {
-            this.fetchUserData(nextId)
+            this.fetchJobData(nextId)
         }
     }
 
 
     render() {
         if (this.state.loading) {
-            return <div style={{ display: 'flex', width: '100%', height: '50vh', justifyContent: 'center', alignItems: 'center' }}><Spinner /></div>
+            return <div style={{ display: 'flex', width: '60%', height: '60vh', justifyContent: 'center', alignItems: 'center' }}><CircularProgress /></div>
         }
 
         if (this.state.error) {
@@ -67,31 +78,41 @@ class DesComponent extends Component {
         }
 
         const jobDes = this.state.jobs;
+        console.log(jobDes.redirect_url);
+        if (jobDes === undefined) {
+            return <div>nothing</div>
+        }
+        else {
+            return (
+                <div className='mainDes mt-4'>
+                    <div className='MainSub'>
 
-        return (
-            <div className='mainDes'>
-                <div className='MainSub'>
+                        <div className='SubHeader container-fluid d-flex mt-5'>
 
-                    <div className='SubHeader container-fluid d-flex'>
+                            <div className='container d-flex mt-3 ml-3'>
+                                <div className='logo'><ApartmentOutlinedIcon style={{ fontSize: 108 }} color="primary" /></div>
+                                <div className='companyName'>
+                                    <h5 className="job-des-title" dangerouslySetInnerHTML={{ __html: jobDes.title }}></h5>
+                                    <span className='company-name'>{jobDes.company.display_name}</span><br></br>
+                                    <span className='location'>{jobDes.location.display_name}</span>
+                                </div>
 
-                        <div className='container d-flex mt-3'>
-                            <div className='logo'><img src={Logo} alt="" /></div>
-                            <div className='companyName mt-3 ml-3'>
-                                <h5>{jobDes.title}</h5>
-                                <div className='location'><p>{jobDes.city}</p></div>
+
+
                             </div>
-
-                            <div>{jobDes.id}</div>
-
+                            <div className='apply-button'><Button href={jobDes.redirect_url} target="_blank" variant="outlined" color="primary">Go to Job</Button></div>
                         </div>
-                        <div className='applyButton mt-4'><Button>Apply</Button></div>
+
+
+
                     </div>
+                    <div className="job-description" dangerouslySetInnerHTML={{ __html: jobDes.description }}>
 
-
-
+                    </div>
                 </div>
-            </div>
-        )
+            )
+        }
+
     }
 
 }
