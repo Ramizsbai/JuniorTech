@@ -13,6 +13,9 @@ class DesComponent extends Component {
             loading: true,
             jobs: [],
             error: null,
+            jobQuery: this.props.jobQuery,
+            location: this.props.location,
+
         }
     }
     headers = {
@@ -21,10 +24,11 @@ class DesComponent extends Component {
         'Access-Control-Allow-Methods': 'GET',
     }
 
+
     fetchJobData = (id) => {
-        this.setState({ loading: true })
-        const job = 'javascript';
-        const city = 'berlin';
+        this.setState({ loading: true, })
+        const job = this.state.jobQuery;
+        const city = this.state.location;
         const APP_ID1 = 'c7212bc0';
         const API_KEY1 = '3ae54560f5840fd67f71ae9bd4f53330';
         const url = `https://cors-anywhere.herokuapp.com/http://api.adzuna.com:80/v1/api/jobs/de/search/1?app_id=${APP_ID1}&app_key=${API_KEY1}&results_per_page=20&what=${job}&where=${city}&content-type=application/json`
@@ -32,6 +36,7 @@ class DesComponent extends Component {
 
             .then(response => response.json())
             .then(data => {
+                console.log(data)
                 const jobData = data.results.find(x => x.id === id)
                 this.setState({ jobs: jobData, loading: false })
                 console.log(this.state.jobs)
@@ -44,7 +49,8 @@ class DesComponent extends Component {
     }
 
 
-    componentDidMount() {
+    componentWillMount() {
+        this.setState({ jobQuery: this.props.jobQuery, location: this.props.location, })
         this.fetchJobData(this.props.match.params.id)
         console.log(this.props.match.params.id)
 
@@ -71,31 +77,39 @@ class DesComponent extends Component {
         }
 
         const jobDes = this.state.jobs;
+        console.log(jobDes);
+        if (jobDes === undefined) {
+            return <div>nothing</div>
+        }
+        else {
+            return (
+                <div className='mainDes'>
+                    <div className='MainSub'>
 
-        return (
-            <div className='mainDes'>
-                <div className='MainSub'>
+                        <div className='SubHeader container-fluid d-flex'>
 
-                    <div className='SubHeader container-fluid d-flex'>
+                            <div className='container d-flex mt-3'>
+                                <div className='logo'><img src={Logo} alt="" /></div>
+                                <div className='companyName mt-3 ml-3'>
+                                    <h5 dangerouslySetInnerHTML={{ __html: jobDes.title }}></h5>
+                                    <div className='location'><p>{jobDes.location.display_name}</p></div>
+                                </div>
 
-                        <div className='container d-flex mt-3'>
-                            <div className='logo'><img src={Logo} alt="" /></div>
-                            <div className='companyName mt-3 ml-3'>
-                                <h5>{jobDes.title}</h5>
-                                <div className='location'><p>{jobDes.city}</p></div>
+
+
                             </div>
+                            <div className='mt-4'><Button variant="outlined" color="primary">Apply</Button></div>
+                        </div>
 
-
+                        <div className="job-description container" dangerouslySetInnerHTML={{ __html: jobDes.description }}>
 
                         </div>
-                        <div className='mt-4'><Button variant="outlined" color="primary">Apply</Button></div>
+
                     </div>
-
-
-
                 </div>
-            </div>
-        )
+            )
+        }
+
     }
 
 }

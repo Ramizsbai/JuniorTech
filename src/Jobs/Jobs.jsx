@@ -58,11 +58,18 @@ const Jobs = () => {
             <Header
                 jobQuery={jobQuery}
                 onSearchSubmit={handleSearchSubmit}
-                location={location} setLocation={setLocation}
+                location={location}
+                setLocation={setLocation}
                 setJobQuery={setJobQuery}
             />
             <Filter />
-            <Body data={data.results} loading={loading} error={error} />
+            <Body
+                data={data.results}
+                loading={loading}
+                error={error}
+                jobQuery={jobQuery}
+                location={location}
+            />
         </div>
     )
 }

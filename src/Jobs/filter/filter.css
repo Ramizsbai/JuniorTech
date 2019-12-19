@@ -5,7 +5,7 @@
 }
 
 .skill-section {
-    width: 65%;
+    width: 60%;
 
 }
 
@@ -18,5 +18,5 @@
 .jobType-section {
     display: flex;
 
-    width: 35%;
+    width: 40%;
 }
