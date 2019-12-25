@@ -4,6 +4,7 @@ import Button from '@material-ui/core/Button';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import keys from '../../../../config';
 import ApartmentOutlinedIcon from '@material-ui/icons/ApartmentOutlined';
+import job from './job.png';
 
 const { APP_ID, API_KEY, URL } = keys;
 
@@ -78,9 +79,11 @@ class DesComponent extends Component {
         }
 
         const jobDes = this.state.jobs;
-        console.log(jobDes.redirect_url);
         if (jobDes === undefined) {
-            return <div>nothing</div>
+            return <div className="my-auto mx-auto"><h2>Choose a Job</h2></div>
+        }
+        if (jobDes.redirect_url === undefined) {
+            return <div className="my-auto mx-auto"><h2>Choose a Job</h2></div>
         }
         else {
             return (
