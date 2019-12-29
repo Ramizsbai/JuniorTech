@@ -11,6 +11,7 @@ import alisio from './alisio.png';
 import tamim from './tamim.png';
 import yasser from './yasser.png';
 import './profiles.css'
+import './responsiveProfiles.css'
 
 
 
@@ -45,7 +46,7 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     justifyContent: 'space-around',
     alignItems: 'center',
-    padding: theme.spacing(1),
+    padding: theme.spacing(-1),
     marginBottom: theme.spacing(3),
   },
   large: {
