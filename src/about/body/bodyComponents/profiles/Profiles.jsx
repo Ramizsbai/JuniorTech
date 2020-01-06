@@ -29,7 +29,7 @@ const useStyles = makeStyles(theme => ({
     textAlign: 'center',
     flexDirection: 'column',
     width: '50%',
-    backgroundColor: '#4c9f70',
+    backgroundColor: '#2FAB99',
     color: "white",
     fontWeight: "Bold",
 
@@ -77,7 +77,7 @@ const Profiles = () => {
                 <span className="team"> Ramez Alsbai</span>
               </Typography>
               <Typography variant="subtitle1" color="textSecondary">
-                Mac Miller
+                Front-end
           </Typography>
             </CardContent>
 
@@ -107,7 +107,7 @@ const Profiles = () => {
                 <span className="team"> Ahmad Ghanem</span>
               </Typography>
               <Typography variant="subtitle1" color="textSecondary">
-                Mac Miller
+                Full-stack
           </Typography>
             </CardContent>
 
@@ -137,7 +137,7 @@ const Profiles = () => {
                 <span className="team">Tamim Abo Tafesh</span>
               </Typography>
               <Typography variant="subtitle1" color="textSecondary">
-                Mac Miller
+              Front-end
           </Typography>
             </CardContent>
 
@@ -173,7 +173,7 @@ const Profiles = () => {
                 <span className="team">Yaser Alrifai</span>
               </Typography>
               <Typography variant="subtitle1" color="textSecondary">
-                Mac Miller
+                Back-end
           </Typography>
             </CardContent>
 
@@ -200,7 +200,7 @@ const Profiles = () => {
                 <span className="team">Alisio Delgado</span>
               </Typography>
               <Typography variant="subtitle1" color="textSecondary">
-                Mac Miller
+              Front-end
           </Typography>
             </CardContent>
 

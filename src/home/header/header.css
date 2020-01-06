@@ -1,6 +1,6 @@
 .mainHeader2 {
     width: 100%;
-    height: 260px;
+    height: 420px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,8 +9,8 @@
 }
 
 .header-design {
-    height: 100px;
-    background-image: url(./lastOne.png);
+    height: 102vh;
+    background-image: url(./1280.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

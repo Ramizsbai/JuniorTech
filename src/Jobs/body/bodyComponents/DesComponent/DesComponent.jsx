@@ -69,7 +69,10 @@ class DesComponent extends Component {
     }
 
 
+
+
     render() {
+
         if (this.state.loading) {
             return <div style={{ display: 'flex', width: '60%', height: '60vh', justifyContent: 'center', alignItems: 'center' }}><CircularProgress /></div>
         }
@@ -90,7 +93,7 @@ class DesComponent extends Component {
                 <div className='mainDes mt-4'>
                     <div className='MainSub'>
 
-                        <div className='SubHeader container-fluid d-flex mt-5'>
+                        <div className='SubHeader container-fluid d-flex mt-1'>
 
                             <div className='container d-flex mt-3 ml-3'>
                                 <div className='logo'><ApartmentOutlinedIcon style={{ fontSize: 108 }} color="primary" /></div>
@@ -117,6 +120,7 @@ class DesComponent extends Component {
         }
 
     }
+
 
 }
 

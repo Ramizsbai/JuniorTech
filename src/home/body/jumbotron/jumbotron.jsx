@@ -7,27 +7,27 @@ import './jumbotron.css';
 
 const content = [
     {
-        title: 'Lorem ipsum dolor sit amet',
+        title: 'Apply to top jobs in Germany',
         description:
-            'Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis.',
+            'We connect job seekers with hiring managers at awesome companies',
         button: 'Read More',
-        image: 'https://i.imgur.com/U5b4BMc.png',
+        image: 'https://i.imgur.com/1VtMi8y.png',
 
     },
     {
-        title: 'Tortor Dapibus Commodo Aenean Quam',
+        title: 'All of the best junior tech jobs in one place',
         description:
-            'Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec sed odio dui.',
-        button: 'Discover',
-        image: 'https://i.imgur.com/U5b4BMc.png',
+            'Filter by location, company and employment type. You can see the job descriptions without creating an account',
+        button: 'Read More',
+        image: 'https://i.imgur.com/dUPTpRU.png',
 
     },
     {
-        title: 'Phasellus volutpat metus',
+        title: 'What is technical interview?',
         description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula.',
+            'Technical interviews are common amongst employers recruiting for engineering, science or I.T. roles. Essentially, it’s an interview to assess your technical ability, usually related to the technical knowledge required for the role and the organisation you wish to work for.',
         button: 'Read More',
-        image: 'https://i.imgur.com/U5b4BMc.png',
+        image: 'https://i.imgur.com/gFbRJ2J.png',
 
     }
 ];

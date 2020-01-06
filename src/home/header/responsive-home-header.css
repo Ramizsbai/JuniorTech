@@ -1,4 +1,4 @@
-@media only screen and (min-width: 200px) and (max-width: 524px) {
+ @media only screen and (min-width: 200px) and (max-width: 524px) {
     .header-design {
         background-image: url(./iphone8.png);
 
@@ -38,8 +38,5 @@
 }
 
 @media only screen and (min-width: 1281px) and (max-width: 1680px) {
-    .header-design {
-        background-image: url(./lastOne.png);
-        height: 86.9vh;
-    }
-}
+
+} 

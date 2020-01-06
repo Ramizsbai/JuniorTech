@@ -1,6 +1,6 @@
 .first-header {
-    color: #2b3966;
-    font-family: roboto;
+    color: #ffffff;
+   
     font-weight: bolder;
     position: relative;
     top: 20px;
@@ -11,27 +11,28 @@
 
 .first-title {
     font-size: 32px;
+  
 }
 
 .second-header {
-    color: #2b3966;
-    font-family: roboto;
+    color: white;
+    font-family: 'Oswald', sans-serif;
     font-weight: bolder;
 
     letter-spacing: 1.5px;
-    text-shadow: rgba(0, 0, 0, 0.053) -6px 1px;
-    font-size: 17px;
-    margin-bottom: 20px;
+    text-shadow: rgba(0, 0, 0, 0.103) -6px 1px;
+    font-size: 28px;
+    margin-bottom: 10px;
 }
 
 .Tech {
 
-    background-color: #496f5d;
+    background-color: #00976a;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
     color: transparent;
     text-shadow: rgba(245, 245, 245, 0.322) 3px 5px 1px;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 44px;
+    font-size: 60px;
 }

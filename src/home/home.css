@@ -1,7 +1,6 @@
 .home-page {
     display: flex;
     flex-direction: column;
-    background-color: #f7f9ff;
-    height: 580px;
+    background-color: #f2f2f2;
 
 }

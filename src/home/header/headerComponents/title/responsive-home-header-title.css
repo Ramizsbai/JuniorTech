@@ -3,7 +3,7 @@
         color: white;
         font-family: 'Oswald', sans-serif;
         font-weight: bolder;
-
+        margin-top: 120px;
         letter-spacing: 1.5px;
         text-shadow: rgba(0, 0, 0, 0.103) -6px 1px;
         font-size: 25px;
@@ -15,7 +15,7 @@
         color: white;
         font-family: 'Oswald', sans-serif;
         font-weight: bolder;
-
+        display: none;
         letter-spacing: 1.5px;
         text-shadow: rgba(0, 0, 0, 0.103) -6px 1px;
         font-size: 14px;
@@ -35,6 +35,7 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
+        font-family: 'Oswald', sans-serif;
     }
 
     .second-header {
@@ -50,17 +51,38 @@
 @media only screen and (min-width: 1024px) and (max-width: 1280px) {
     .first-header {
         font-size: 40px;
+        margin-top: 120px;
         display: flex;
         flex-direction: row;
         justify-content: center;
+        font-family: 'Oswald', sans-serif;
     }
 }
 
 @media only screen and (min-width: 1281px) and (max-width: 1680px) {
     .first-header {
         font-size: 40px;
+        margin-top: 0px;
         display: flex;
         flex-direction: row;
         justify-content: center;
+        font-family: 'Oswald', sans-serif;
+    }
+
+    .second-header {
+        font-size: 24px;
+        
+    }
+}
+
+
+@media only screen and (min-width: 1680px){
+    .first-header {
+        font-size: 40px;
+        margin-top: 120px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-family: 'Oswald', sans-serif;
     }
 }

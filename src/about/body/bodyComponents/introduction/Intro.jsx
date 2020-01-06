@@ -38,12 +38,10 @@ const Intro = () => {
                 <Typography className={classes.root} variant="h3" component="h3">
                     <span className="our-team"> Our Team</span>
                 </Typography>
-                <Typography className={classes.para} component="p" color="#455a64">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                     Cumque adipisci hic veritatis necessitatibus temporibus.
-                      Quia blanditiis nulla consectetur dicta dolores explicabo
-                       repudiandae dolorem vero. Ipsa id facilis explicabo laboriosam eaque.
-                    Paper can be used to build surface or other elements for your.
+                <Typography className={classes.para} component="p" color="#38D39F">
+                    Junior Tech is a job board for junior in the tech industry in Germany. The whole idea came when we were about to finish our course. We have seen that there are no job boards focusing only on junior positions.Then we decided to create an app where people can find their first job in the tech industry.
+    
+    
       </Typography>
             </Container>
 

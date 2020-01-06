@@ -12,8 +12,11 @@
 }
 
 .job-company-logo{
+    margin-top: 10px;
     width: 70px;
-    border-radius: 35%;
+    height: 36px;
+    border-radius: 10%;
+    background-color: #44a86ec4;
     -webkit-box-shadow: 0px 6px 11px 1px rgba(0,0,0,0.24);
     -moz-box-shadow: 0px 6px 11px 1px rgba(0,0,0,0.24);
     box-shadow: 0px 6px 11px 1px rgba(0,0,0,0.24);
